@@ -1,0 +1,163 @@
+[0.750s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x/planning_with_ROS2_course/install/base_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/x/planning_with_ROS2_course/src/planning -DCMAKE_INSTALL_PREFIX=/home/x/planning_with_ROS2_course/install/planning
+[0.917s] -- The C compiler identification is GNU 11.4.0
+[1.086s] -- The CXX compiler identification is GNU 11.4.0
+[1.111s] -- Detecting C compiler ABI info
+[1.334s] -- Detecting C compiler ABI info - done
+[1.353s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.353s] -- Detecting C compile features
+[1.353s] -- Detecting C compile features - done
+[1.372s] -- Detecting CXX compiler ABI info
+[1.646s] -- Detecting CXX compiler ABI info - done
+[1.660s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.663s] -- Detecting CXX compile features
+[1.663s] -- Detecting CXX compile features - done
+[1.667s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.162s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.433s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.626s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.639s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.659s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.683s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.751s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.048s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.072s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.399s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.470s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.558s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.612s] -- Looking for pthread.h
+[3.812s] -- Looking for pthread.h - found
+[3.812s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.038s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.038s] -- Found Threads: TRUE  
+[4.333s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[4.386s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.833s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.855s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[4.940s] -- Found base_msgs: 0.0.0 (/home/x/planning_with_ROS2_course/install/base_msgs/share/base_msgs/cmake)
+[5.158s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.349s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.353s] -- Configured cppcheck include dirs: /home/x/planning_with_ROS2_course/src/planning/src/common/config_reader;/home/x/planning_with_ROS2_course/src/planning/src/common/math;/home/x/planning_with_ROS2_course/src/planning/src/decision_center;/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator;/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_straight;/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_sturn;/home/x/planning_with_ROS2_course/src/planning/src/global_planner;/home/x/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal;/home/x/planning_with_ROS2_course/src/planning/src/local_planner;/home/x/planning_with_ROS2_course/src/planning/src/local_planner/local_path;/home/x/planning_with_ROS2_course/src/planning/src/local_planner/local_speeds;/home/x/planning_with_ROS2_course/src/planning/src/reference_line;/home/x/planning_with_ROS2_course/src/planning/src/vehicle_info;/home/x/planning_with_ROS2_course/src/planning/src/vehicle_info/main_car;/home/x/planning_with_ROS2_course/src/planning/src/vehicle_info/obs_car;/home/x/planning_with_ROS2_course/src/planning/src/planning_process;/home/x/planning_with_ROS2_course/src/planning/src/move_cmd
+[5.353s] -- Configured cppcheck exclude dirs and/or files: 
+[5.354s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.357s] -- Added test 'lint_cmake' to check CMake code style
+[5.363s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.366s] -- Added test 'uncrustify' to check C / C++ code style
+[5.366s] -- Configured uncrustify additional arguments: 
+[5.366s] -- Added test 'xmllint' to check XML markup files
+[5.371s] -- Configuring done
+[5.528s] -- Generating done
+[5.570s] -- Build files have been written to: /home/x/planning_with_ROS2_course/build/planning
+[5.614s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x/planning_with_ROS2_course/install/base_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/x/planning_with_ROS2_course/src/planning -DCMAKE_INSTALL_PREFIX=/home/x/planning_with_ROS2_course/install/planning
+[5.615s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x/planning_with_ROS2_course/install/base_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8
+[5.707s] [  2%] [32mBuilding CXX object src/common/CMakeFiles/config_reader.dir/config_reader/config_reader.cpp.o[0m
+[5.710s] [  5%] [32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/polynomial_curve.cpp.o[0m
+[5.710s] [  8%] [32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/curve.cpp.o[0m
+[15.920s] [ 11%] [32m[1mLinking CXX shared library libmathlibs.so[0m
+[16.596s] [ 14%] [32m[1mLinking CXX shared library libconfig_reader.so[0m
+[16.674s] [ 14%] Built target mathlibs
+[16.967s] [ 14%] Built target config_reader
+[17.046s] [ 20%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car_info.cpp.o[0m
+[17.047s] [ 20%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car_info.cpp.o[0m
+[17.084s] [ 22%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o[0m
+[17.085s] [ 28%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.o[0m
+[17.085s] [ 31%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o[0m
+[17.085s] [ 25%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_sturn/pnc_map_creator_sturn.cpp.o[0m
+[17.104s] [ 34%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o[0m
+[37.374s] [ 37%] [32m[1mLinking CXX shared library libvehicle_info.so[0m
+[37.825s] [ 40%] [32m[1mLinking CXX shared library libglobal_planner.so[0m
+[38.647s] [ 40%] Built target vehicle_info
+[38.707s] [ 40%] Built target global_planner
+[38.857s] [ 42%] [32m[1mLinking CXX shared library libpnc_map_creator.so[0m
+[39.447s] [ 42%] Built target pnc_map_creator
+[41.256s] [ 45%] [32m[1mLinking CXX shared library libreference_line.so[0m
+[41.764s] [ 45%] Built target reference_line
+[41.842s] [ 48%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o[0m
+[50.557s] [ 51%] [32m[1mLinking CXX executable pnc_map_server[0m
+[50.907s] [ 51%] Built target pnc_map_server
+[50.950s] [ 54%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o[0m
+[59.039s] [ 57%] [32m[1mLinking CXX executable global_path_server[0m
+[59.382s] [ 57%] Built target global_path_server
+[59.424s] [ 60%] [32mBuilding CXX object src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o[0m
+[68.630s] [ 62%] [32m[1mLinking CXX executable obs_move_cmd[0m
+[69.203s] [ 62%] Built target obs_move_cmd
+[69.256s] [ 65%] [32mBuilding CXX object src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o[0m
+[77.316s] [ 68%] [32m[1mLinking CXX executable car_move_cmd[0m
+[77.732s] [ 68%] Built target car_move_cmd
+[77.770s] [ 71%] [32mBuilding CXX object src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o[0m
+[86.426s] [ 74%] [32m[1mLinking CXX shared library libdecision_center.so[0m
+[86.794s] [ 74%] Built target decision_center
+[86.845s] [ 77%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_trajectory_combiner.cpp.o[0m
+[86.846s] [ 80%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_smoother.cpp.o[0m
+[86.846s] [ 82%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_planner.cpp.o[0m
+[86.848s] [ 88%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_smoother.cpp.o[0m
+[86.848s] [ 88%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_planner.cpp.o[0m
+[102.778s] [ 91%] [32m[1mLinking CXX shared library liblocal_planner.so[0m
+[103.175s] [ 91%] Built target local_planner
+[103.218s] [ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process_main.cpp.o[0m
+[113.441s] [ 97%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o[0m
+[122.930s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:[m[K In constructor ‘[01m[KPlanning::PlanningProcess::PlanningProcess()[m[K’:
+[122.930s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:36:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kobs_dis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[122.930s]    36 |         auto [01;35m[Kobs_dis[m[K = process_config_->process().obs_dis_;
+[122.930s]       |              [01;35m[K^~~~~~~[m[K
+[125.119s] [100%] [32m[1mLinking CXX executable planning_process[0m
+[125.771s] [100%] Built target planning_process
+[125.800s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x/planning_with_ROS2_course/install/base_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8
+[125.805s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x/planning_with_ROS2_course/install/base_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/x/planning_with_ROS2_course/build/planning
+[125.824s] -- Install configuration: ""
+[125.824s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so
+[125.824s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so" to ""
+[125.824s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libmathlibs.so
+[125.827s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libmathlibs.so" to ""
+[125.827s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libdecision_center.so
+[125.827s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libdecision_center.so" to ""
+[125.827s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so
+[125.827s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so" to ""
+[125.827s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/planning/pnc_map_server
+[125.827s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/planning/pnc_map_server" to ""
+[125.831s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so
+[125.831s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so" to ""
+[125.831s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/planning/global_path_server
+[125.831s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/planning/global_path_server" to ""
+[125.831s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so
+[125.831s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so" to ""
+[125.831s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libreference_line.so
+[125.837s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libreference_line.so" to ""
+[125.837s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so
+[125.837s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so" to ""
+[125.837s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/planning/planning_process
+[125.837s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/planning/planning_process" to ""
+[125.837s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/planning/car_move_cmd
+[125.837s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/planning/car_move_cmd" to ""
+[125.837s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/planning/obs_move_cmd
+[125.840s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/planning/obs_move_cmd" to ""
+[125.840s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/config
+[125.840s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/config/planning_static_obs_config.yaml
+[125.840s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/launch
+[125.840s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/launch/planning_launch.py
+[125.840s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf
+[125.840s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car
+[125.840s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car/obs_car.xacro
+[125.840s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car
+[125.843s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car.xacro
+[125.844s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_radar.xacro
+[125.844s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_wheels.xacro
+[125.844s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_camera.xacro
+[125.844s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_base.xacro
+[125.845s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/rviz
+[125.845s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/rviz/planning.rviz
+[125.845s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+[125.845s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+[125.849s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.sh
+[125.850s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.dsv
+[125.852s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/path.sh
+[125.852s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/path.dsv
+[125.852s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.bash
+[125.852s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.sh
+[125.852s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.zsh
+[125.852s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.dsv
+[125.852s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/package.dsv
+[125.852s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/packages/planning
+[125.853s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig.cmake
+[125.853s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig-version.cmake
+[125.853s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/package.xml
+[125.855s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x/planning_with_ROS2_course/install/base_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/x/planning_with_ROS2_course/build/planning

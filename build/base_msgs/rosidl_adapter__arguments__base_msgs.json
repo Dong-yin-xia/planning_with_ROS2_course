@@ -1,0 +1,18 @@
+{
+  "package_name": "base_msgs",
+  "non_idl_tuples": [
+    "/home/x/planning_with_ROS2_course/src/base_msgs:srv/GlobalPathService.srv",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:srv/PNCMapService.srv",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/PNCMap.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/ReferlinePoint.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/Referline.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/LocalPathPoint.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/LocalPath.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/LocalSpeedsPoint.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/LocalSpeeds.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/LocalTrajectoryPoint.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/LocalTrajectory.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/ObsInfo.msg",
+    "/home/x/planning_with_ROS2_course/src/base_msgs:msg/PlotInfo.msg"
+  ]
+}

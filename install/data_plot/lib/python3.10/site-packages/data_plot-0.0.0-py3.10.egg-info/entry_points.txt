@@ -1,0 +1,3 @@
+[console_scripts]
+data_plot = data_plot.data_plot:main
+

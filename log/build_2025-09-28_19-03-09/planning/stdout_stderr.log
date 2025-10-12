@@ -1,0 +1,24 @@
+[  5%] Built target config_reader
+[ 14%] Built target mathlibs
+[ 20%] Built target global_planner
+[ 28%] Built target pnc_map_creator
+[ 37%] Built target vehicle_info
+[ 45%] Built target reference_line
+[35m[1mConsolidate compiler generated dependencies of target pnc_map_server[0m
+[ 51%] Built target global_path_server
+[ 57%] Built target decision_center
+[ 60%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o[0m
+[ 65%] Built target car_move_cmd
+[ 71%] Built target obs_move_cmd
+[ 88%] Built target local_planner
+[ 97%] Built target planning_process
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:[m[K In member function ‘[01m[Kvoid Planning::PNCMapServer::response_pnc_map_callback(std::shared_ptr<base_msgs::srv::PNCMapService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::PNCMapService_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:47:35:[m[K [01;31m[Kerror: [m[K‘[01m[KMapType[m[K’ has not been declared
+   47 |             case static_cast<int>([01;31m[KMapType[m[K::STRAIGHT): // 直线路径
+      |                                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:50:35:[m[K [01;31m[Kerror: [m[K‘[01m[KMapType[m[K’ has not been declared
+   50 |             case static_cast<int>([01;31m[KMapType[m[K::STERN): // 转角路径
+      |                                   [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:411：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

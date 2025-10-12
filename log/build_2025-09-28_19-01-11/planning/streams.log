@@ -1,0 +1,29 @@
+[0.034s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8
+[0.181s] [  5%] Built target config_reader
+[0.188s] [ 14%] Built target mathlibs
+[0.266s] [ 22%] Built target pnc_map_creator
+[0.291s] [ 31%] Built target reference_line
+[0.291s] [ 37%] Built target global_planner
+[0.321s] Consolidate compiler generated dependencies of target pnc_map_server
+[0.347s] [ 45%] Built target vehicle_info
+[0.363s] [ 48%] Building CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o
+[0.392s] [ 54%] Built target global_path_server
+[0.439s] [ 60%] Built target decision_center
+[0.445s] [ 65%] Built target car_move_cmd
+[0.449s] [ 71%] Built target obs_move_cmd
+[0.522s] [ 88%] Built target local_planner
+[0.594s] [ 91%] Building CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o
+[13.284s] /home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp: In member function ‘void Planning::PNCMapServer::response_pnc_map_callback(std::shared_ptr<base_msgs::srv::PNCMapService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::PNCMapService_Response_<std::allocator<void> > >)’:
+[13.284s] /home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:47:35: error: ‘MapType’ has not been declared
+[13.284s]    47 |             case static_cast<int>(MapType::STRAIGHT): // 直线路径
+[13.284s]       |                                   ^~~~~~~
+[13.295s] /home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:50:35: error: ‘MapType’ has not been declared
+[13.295s]    50 |             case static_cast<int>(MapType::STERN): // 转角路径
+[13.295s]       |                                   ^~~~~~~
+[21.399s] gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] 错误 1
+[21.400s] gmake[1]: *** [CMakeFiles/Makefile2:411：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+[21.400s] gmake[1]: *** 正在等待未完成的任务....
+[25.110s] [ 94%] Linking CXX executable planning_process
+[25.729s] [ 97%] Built target planning_process
+[25.733s] gmake: *** [Makefile:146：all] 错误 2
+[25.744s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from base_msgs/msg/LocalTrajectoryPoint.msg
+// generated code does not contain a copyright notice
+
+#include "base_msgs/msg/LocalPathPoint.idl"
+#include "base_msgs/msg/LocalSpeedsPoint.idl"
+
+module base_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "轨迹点")
+    struct LocalTrajectoryPoint {
+      @verbatim (language="comment", text=
+        "路径点")
+      base_msgs::msg::LocalPathPoint path_point;
+
+      @verbatim (language="comment", text=
+        "速度点")
+      base_msgs::msg::LocalSpeedsPoint speed_point;
+    };
+  };
+};

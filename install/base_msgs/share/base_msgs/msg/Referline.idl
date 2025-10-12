@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from base_msgs/msg/Referline.msg
+// generated code does not contain a copyright notice
+
+#include "base_msgs/msg/ReferlinePoint.idl"
+#include "std_msgs/msg/Header.idl"
+
+module base_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "参考线")
+    struct Referline {
+      @verbatim (language="comment", text=
+        "消息头, 用于坐标系和时间同步")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "路径")
+      sequence<base_msgs::msg::ReferlinePoint> refer_line;
+    };
+  };
+};

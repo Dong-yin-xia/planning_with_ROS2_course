@@ -1,0 +1,10 @@
+/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp: In member function ‘void Planning::PNCMapServer::response_pnc_map_callback(std::shared_ptr<base_msgs::srv::PNCMapService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::PNCMapService_Response_<std::allocator<void> > >)’:
+/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:47:35: error: ‘MapType’ has not been declared
+   47 |             case static_cast<int>(MapType::STRAIGHT): // 直线路径
+      |                                   ^~~~~~~
+/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:50:35: error: ‘MapType’ has not been declared
+   50 |             case static_cast<int>(MapType::STERN): // 转角路径
+      |                                   ^~~~~~~
+gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:411：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

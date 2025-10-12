@@ -1,0 +1,51 @@
+[0.613s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8
+[0.753s] [  5%] Built target config_reader
+[0.775s] [ 14%] Built target mathlibs
+[0.837s] [ 20%] Built target global_planner
+[0.838s] [ 25%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o[0m
+[0.838s] [ 22%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_sturn/pnc_map_creator_sturn.cpp.o[0m
+[0.857s] [ 34%] Built target vehicle_info
+[0.881s] [ 42%] Built target reference_line
+[0.984s] [ 48%] Built target global_path_server
+[0.984s] [ 54%] Built target car_move_cmd
+[1.001s] [ 60%] Built target obs_move_cmd
+[1.006s] [ 65%] Built target decision_center
+[1.144s] [ 82%] Built target local_planner
+[1.252s] [ 91%] Built target planning_process
+[8.624s] [ 94%] [32m[1mLinking CXX shared library libpnc_map_creator.so[0m
+[9.153s] [ 94%] Built target pnc_map_creator
+[9.176s] [35m[1mConsolidate compiler generated dependencies of target pnc_map_server[0m
+[9.203s] [ 97%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o[0m
+[16.350s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[16.350s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[16.350s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[16.350s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.351s]                  from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:4[m[K,
+[16.351s]                  from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:18[m[K:
+[16.351s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Planning::PNCMapCreatorSTurn; _Args = {}; _Tp = Planning::PNCMapCreatorSTurn][m[K’:
+[16.351s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Planning::PNCMapCreatorSTurn; _Args = {}; _Tp = Planning::PNCMapCreatorSTurn; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<Planning::PNCMapCreatorSTurn>][m[K’
+[16.351s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = Planning::PNCMapCreatorSTurn; _Alloc = std::allocator<Planning::PNCMapCreatorSTurn>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[16.351s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Planning::PNCMapCreatorSTurn; _Alloc = std::allocator<Planning::PNCMapCreatorSTurn>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[16.351s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Planning::PNCMapCreatorSTurn>; _Args = {}; _Tp = Planning::PNCMapCreatorSTurn; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[16.351s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Planning::PNCMapCreatorSTurn>; _Args = {}; _Tp = Planning::PNCMapCreatorSTurn][m[K’
+[16.351s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Planning::PNCMapCreatorSTurn; _Alloc = std::allocator<Planning::PNCMapCreatorSTurn>; _Args = {}][m[K’
+[16.352s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Planning::PNCMapCreatorSTurn; _Args = {}][m[K’
+[16.352s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:51:68:[m[K   required from here
+[16.352s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[KPlanning::PNCMapCreatorSTurn[m[K’
+[16.352s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[16.352s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.352s] In file included from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:7[m[K,
+[16.352s]                  from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:18[m[K:
+[16.352s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_sturn/pnc_map_creator_sturn.h:8:11:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[KPlanning::PNCMapCreatorSTurn[m[K’:
+[16.352s]     8 |     class [01;36m[KPNCMapCreatorSTurn[m[K : public PNCMapCreatorBase // S弯道地图
+[16.352s]       |           [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[16.352s] In file included from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_straight/pnc_map_creator_straight.h:4[m[K,
+[16.352s]                  from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:6[m[K,
+[16.352s]                  from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:18[m[K:
+[16.353s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_creator_base.h:26:18:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual base_msgs::msg::PNCMap Planning::PNCMapCreatorBase::create_pnc_map()[m[K’
+[16.353s]    26 |   virtual PNCMap [01;36m[Kcreate_pnc_map[m[K() = 0; // 创建pnc地图
+[16.353s]       |                  [01;36m[K^~~~~~~~~~~~~~[m[K
+[18.442s] gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] 错误 1
+[18.443s] gmake[1]: *** [CMakeFiles/Makefile2:411：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+[18.443s] gmake: *** [Makefile:146：all] 错误 2
+[18.447s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8

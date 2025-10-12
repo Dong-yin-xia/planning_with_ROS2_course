@@ -1,0 +1,10 @@
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:[m[K In member function ‘[01m[Kvoid Planning::PlanningProcess::get_location(const std::shared_ptr<Planning::VehicleBase>&)[m[K’:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:141:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvehicle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  141 |     void PlanningProcess::get_location([01;35m[Kconst std::shared_ptr<VehicleBase> &vehicle[m[K) // 获取位置,监听定位点
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+/usr/bin/ld: CMakeFiles/planning_process.dir/planning_process.cpp.o: in function `Planning::PlanningProcess::process()':
+planning_process.cpp:(.text+0xd6f): undefined reference to `Planning::PlanningProcess::planning_callback()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [src/planning_process/CMakeFiles/planning_process.dir/build.make:254：src/planning_process/planning_process] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:578：src/planning_process/CMakeFiles/planning_process.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

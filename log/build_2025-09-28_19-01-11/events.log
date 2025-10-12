@@ -1,0 +1,291 @@
+[0.000000] (-) TimerEvent: {}
+[0.000161] (-) JobUnselected: {'identifier': 'base_msgs'}
+[0.000230] (-) JobUnselected: {'identifier': 'data_plot'}
+[0.000288] (planning) JobQueued: {'identifier': 'planning', 'dependencies': OrderedDict([('base_msgs', '/home/x/planning_with_ROS2_course/install/base_msgs')])}
+[0.000324] (planning) JobStarted: {'identifier': 'planning'}
+[0.037162] (planning) JobProgress: {'identifier': 'planning', 'progress': 'cmake'}
+[0.037815] (planning) JobProgress: {'identifier': 'planning', 'progress': 'build'}
+[0.037895] (planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/x/planning_with_ROS2_course/build/planning', '--', '-j8', '-l8'], 'cwd': '/home/x/planning_with_ROS2_course/build/planning', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/x'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'zh_CN'), ('USER', 'x'), ('LC_TIME', 'zh_CN.UTF-8'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/x/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","messagesFile":"/home/x/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/b753cece5c67c47cb5637199a5a5de2b7100c180/nls.messages.json","corruptMarkerFile":"/home/x/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"6fe284ae87274d9cb2cdffc89b193492.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/x/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","_cacheRoot":"/home/x/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn","_resolvedLanguagePackCoreLocation":"/home/x/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/b753cece5c67c47cb5637199a5a5de2b7100c180","_corruptedFile":"/home/x/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/x'), ('CHROME_DESKTOP', 'cursor.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-619cf0c9-1.6.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1167'), ('SYSTEMD_EXEC_PID', '1490'), ('IM_CONFIG_CHECK_ENV', '1'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3798'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', 'file:///home/x/.cursor/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.99.0-universal/translations/extensions/vscode.json-language-features.i18n.json'), ('COLCON_PREFIX_PATH', '/home/x/planning_with_ROS2_course/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:15204'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'x'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS2_PLANNING_COURSE_INSTALL', '/home/x/planning_with_ROS2_course/install'), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/y:@/tmp/.ICE-unix/1457,unix/y:/tmp/.ICE-unix/1457'), ('INVOCATION_ID', 'c080e0ef9afa4ee1829471b979b7755d'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('VSCODE_PROCESS_TITLE', 'extension-host  [1-1]'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I17ID3'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', 'a4a79ede9a1f4ab08b83684d1068e52f'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/home/x/planning_with_ROS2_course/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/x/planning_with_ROS2_course/build/planning'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/x/.config/Cursor/CachedData/b753cece5c67c47cb5637199a5a5de2b7100c180'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x/planning_with_ROS2_course/install/data_plot/lib/python3.10/site-packages:/home/x/planning_with_ROS2_course/install/base_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble'), ('VSCODE_PID', '3798')]), 'shell': False}
+[0.093924] (-) TimerEvent: {}
+[0.186678] (planning) StdoutLine: {'line': b'[  5%] Built target config_reader\n'}
+[0.194290] (planning) StdoutLine: {'line': b'[ 14%] Built target mathlibs\n'}
+[0.194560] (-) TimerEvent: {}
+[0.272493] (planning) StdoutLine: {'line': b'[ 22%] Built target pnc_map_creator\n'}
+[0.295421] (planning) StdoutLine: {'line': b'[ 31%] Built target reference_line\n'}
+[0.297418] (-) TimerEvent: {}
+[0.297457] (planning) StdoutLine: {'line': b'[ 37%] Built target global_planner\n'}
+[0.326585] (planning) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target pnc_map_server\n'}
+[0.353472] (planning) StdoutLine: {'line': b'[ 45%] Built target vehicle_info\n'}
+[0.369084] (planning) StdoutLine: {'line': b'[ 48%] Building CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o\n'}
+[0.398268] (planning) StdoutLine: {'line': b'[ 54%] Built target global_path_server\n'}
+[0.398538] (-) TimerEvent: {}
+[0.444546] (planning) StdoutLine: {'line': b'[ 60%] Built target decision_center\n'}
+[0.451151] (planning) StdoutLine: {'line': b'[ 65%] Built target car_move_cmd\n'}
+[0.455084] (planning) StdoutLine: {'line': b'[ 71%] Built target obs_move_cmd\n'}
+[0.499402] (-) TimerEvent: {}
+[0.527684] (planning) StdoutLine: {'line': b'[ 88%] Built target local_planner\n'}
+[0.600487] (planning) StdoutLine: {'line': b'[ 91%] Building CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o\n'}
+[0.600698] (-) TimerEvent: {}
+[0.703698] (-) TimerEvent: {}
+[0.806229] (-) TimerEvent: {}
+[0.906758] (-) TimerEvent: {}
+[1.008785] (-) TimerEvent: {}
+[1.109717] (-) TimerEvent: {}
+[1.210105] (-) TimerEvent: {}
+[1.310907] (-) TimerEvent: {}
+[1.414963] (-) TimerEvent: {}
+[1.516479] (-) TimerEvent: {}
+[1.617128] (-) TimerEvent: {}
+[1.719530] (-) TimerEvent: {}
+[1.820943] (-) TimerEvent: {}
+[1.921941] (-) TimerEvent: {}
+[2.022338] (-) TimerEvent: {}
+[2.129689] (-) TimerEvent: {}
+[2.231481] (-) TimerEvent: {}
+[2.332002] (-) TimerEvent: {}
+[2.438451] (-) TimerEvent: {}
+[2.539121] (-) TimerEvent: {}
+[2.639549] (-) TimerEvent: {}
+[2.739950] (-) TimerEvent: {}
+[2.840552] (-) TimerEvent: {}
+[2.946219] (-) TimerEvent: {}
+[3.048423] (-) TimerEvent: {}
+[3.149154] (-) TimerEvent: {}
+[3.251527] (-) TimerEvent: {}
+[3.357633] (-) TimerEvent: {}
+[3.458030] (-) TimerEvent: {}
+[3.559451] (-) TimerEvent: {}
+[3.663891] (-) TimerEvent: {}
+[3.766064] (-) TimerEvent: {}
+[3.869175] (-) TimerEvent: {}
+[3.970236] (-) TimerEvent: {}
+[4.070672] (-) TimerEvent: {}
+[4.171360] (-) TimerEvent: {}
+[4.271813] (-) TimerEvent: {}
+[4.373038] (-) TimerEvent: {}
+[4.473737] (-) TimerEvent: {}
+[4.574262] (-) TimerEvent: {}
+[4.676744] (-) TimerEvent: {}
+[4.777520] (-) TimerEvent: {}
+[4.877912] (-) TimerEvent: {}
+[4.978876] (-) TimerEvent: {}
+[5.079454] (-) TimerEvent: {}
+[5.186032] (-) TimerEvent: {}
+[5.289597] (-) TimerEvent: {}
+[5.396441] (-) TimerEvent: {}
+[5.500087] (-) TimerEvent: {}
+[5.600895] (-) TimerEvent: {}
+[5.702757] (-) TimerEvent: {}
+[5.803216] (-) TimerEvent: {}
+[5.903648] (-) TimerEvent: {}
+[6.008222] (-) TimerEvent: {}
+[6.108761] (-) TimerEvent: {}
+[6.209160] (-) TimerEvent: {}
+[6.310671] (-) TimerEvent: {}
+[6.411118] (-) TimerEvent: {}
+[6.511714] (-) TimerEvent: {}
+[6.612189] (-) TimerEvent: {}
+[6.713023] (-) TimerEvent: {}
+[6.813741] (-) TimerEvent: {}
+[6.914971] (-) TimerEvent: {}
+[7.015762] (-) TimerEvent: {}
+[7.116105] (-) TimerEvent: {}
+[7.217849] (-) TimerEvent: {}
+[7.320987] (-) TimerEvent: {}
+[7.421880] (-) TimerEvent: {}
+[7.522610] (-) TimerEvent: {}
+[7.626949] (-) TimerEvent: {}
+[7.727455] (-) TimerEvent: {}
+[7.828299] (-) TimerEvent: {}
+[7.928617] (-) TimerEvent: {}
+[8.029041] (-) TimerEvent: {}
+[8.129950] (-) TimerEvent: {}
+[8.230828] (-) TimerEvent: {}
+[8.331477] (-) TimerEvent: {}
+[8.432333] (-) TimerEvent: {}
+[8.532715] (-) TimerEvent: {}
+[8.633414] (-) TimerEvent: {}
+[8.733989] (-) TimerEvent: {}
+[8.835076] (-) TimerEvent: {}
+[8.936473] (-) TimerEvent: {}
+[9.037588] (-) TimerEvent: {}
+[9.138463] (-) TimerEvent: {}
+[9.238779] (-) TimerEvent: {}
+[9.342456] (-) TimerEvent: {}
+[9.445062] (-) TimerEvent: {}
+[9.545426] (-) TimerEvent: {}
+[9.646442] (-) TimerEvent: {}
+[9.747912] (-) TimerEvent: {}
+[9.849131] (-) TimerEvent: {}
+[9.950603] (-) TimerEvent: {}
+[10.052899] (-) TimerEvent: {}
+[10.154139] (-) TimerEvent: {}
+[10.254495] (-) TimerEvent: {}
+[10.355184] (-) TimerEvent: {}
+[10.455932] (-) TimerEvent: {}
+[10.558044] (-) TimerEvent: {}
+[10.658963] (-) TimerEvent: {}
+[10.759696] (-) TimerEvent: {}
+[10.860426] (-) TimerEvent: {}
+[10.960996] (-) TimerEvent: {}
+[11.061592] (-) TimerEvent: {}
+[11.162910] (-) TimerEvent: {}
+[11.263293] (-) TimerEvent: {}
+[11.364893] (-) TimerEvent: {}
+[11.465406] (-) TimerEvent: {}
+[11.567902] (-) TimerEvent: {}
+[11.668529] (-) TimerEvent: {}
+[11.769086] (-) TimerEvent: {}
+[11.875573] (-) TimerEvent: {}
+[11.976870] (-) TimerEvent: {}
+[12.077720] (-) TimerEvent: {}
+[12.178377] (-) TimerEvent: {}
+[12.279103] (-) TimerEvent: {}
+[12.379562] (-) TimerEvent: {}
+[12.480909] (-) TimerEvent: {}
+[12.581841] (-) TimerEvent: {}
+[12.682751] (-) TimerEvent: {}
+[12.784976] (-) TimerEvent: {}
+[12.886215] (-) TimerEvent: {}
+[12.986655] (-) TimerEvent: {}
+[13.088042] (-) TimerEvent: {}
+[13.189239] (-) TimerEvent: {}
+[13.287915] (planning) StderrLine: {'line': b'/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp: In member function \xe2\x80\x98void Planning::PNCMapServer::response_pnc_map_callback(std::shared_ptr<base_msgs::srv::PNCMapService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::PNCMapService_Response_<std::allocator<void> > >)\xe2\x80\x99:\n'}
+[13.289888] (-) TimerEvent: {}
+[13.289947] (planning) StderrLine: {'line': b'/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:47:35: error: \xe2\x80\x98MapType\xe2\x80\x99 has not been declared\n'}
+[13.290088] (planning) StderrLine: {'line': b'   47 |             case static_cast<int>(MapType::STRAIGHT): // \xe7\x9b\xb4\xe7\xba\xbf\xe8\xb7\xaf\xe5\xbe\x84\n'}
+[13.290307] (planning) StderrLine: {'line': b'      |                                   ^~~~~~~\n'}
+[13.300954] (planning) StderrLine: {'line': b'/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:50:35: error: \xe2\x80\x98MapType\xe2\x80\x99 has not been declared\n'}
+[13.301265] (planning) StderrLine: {'line': b'   50 |             case static_cast<int>(MapType::STERN): // \xe8\xbd\xac\xe8\xa7\x92\xe8\xb7\xaf\xe5\xbe\x84\n'}
+[13.301375] (planning) StderrLine: {'line': b'      |                                   ^~~~~~~\n'}
+[13.390352] (-) TimerEvent: {}
+[13.492225] (-) TimerEvent: {}
+[13.593007] (-) TimerEvent: {}
+[13.694223] (-) TimerEvent: {}
+[13.795163] (-) TimerEvent: {}
+[13.903542] (-) TimerEvent: {}
+[14.004770] (-) TimerEvent: {}
+[14.105537] (-) TimerEvent: {}
+[14.206452] (-) TimerEvent: {}
+[14.307122] (-) TimerEvent: {}
+[14.407393] (-) TimerEvent: {}
+[14.509197] (-) TimerEvent: {}
+[14.614437] (-) TimerEvent: {}
+[14.716313] (-) TimerEvent: {}
+[14.817531] (-) TimerEvent: {}
+[14.918120] (-) TimerEvent: {}
+[15.019726] (-) TimerEvent: {}
+[15.123000] (-) TimerEvent: {}
+[15.223511] (-) TimerEvent: {}
+[15.323785] (-) TimerEvent: {}
+[15.424033] (-) TimerEvent: {}
+[15.528884] (-) TimerEvent: {}
+[15.633193] (-) TimerEvent: {}
+[15.744090] (-) TimerEvent: {}
+[15.844903] (-) TimerEvent: {}
+[15.946074] (-) TimerEvent: {}
+[16.047089] (-) TimerEvent: {}
+[16.147765] (-) TimerEvent: {}
+[16.248538] (-) TimerEvent: {}
+[16.353024] (-) TimerEvent: {}
+[16.457449] (-) TimerEvent: {}
+[16.560630] (-) TimerEvent: {}
+[16.661093] (-) TimerEvent: {}
+[16.763586] (-) TimerEvent: {}
+[16.865186] (-) TimerEvent: {}
+[16.967095] (-) TimerEvent: {}
+[17.068232] (-) TimerEvent: {}
+[17.169184] (-) TimerEvent: {}
+[17.269947] (-) TimerEvent: {}
+[17.370527] (-) TimerEvent: {}
+[17.472083] (-) TimerEvent: {}
+[17.575135] (-) TimerEvent: {}
+[17.676556] (-) TimerEvent: {}
+[17.777233] (-) TimerEvent: {}
+[17.877865] (-) TimerEvent: {}
+[17.979408] (-) TimerEvent: {}
+[18.080602] (-) TimerEvent: {}
+[18.184864] (-) TimerEvent: {}
+[18.288253] (-) TimerEvent: {}
+[18.388891] (-) TimerEvent: {}
+[18.489364] (-) TimerEvent: {}
+[18.590203] (-) TimerEvent: {}
+[18.691501] (-) TimerEvent: {}
+[18.792473] (-) TimerEvent: {}
+[18.892891] (-) TimerEvent: {}
+[18.993309] (-) TimerEvent: {}
+[19.093826] (-) TimerEvent: {}
+[19.194508] (-) TimerEvent: {}
+[19.294904] (-) TimerEvent: {}
+[19.398035] (-) TimerEvent: {}
+[19.498759] (-) TimerEvent: {}
+[19.600694] (-) TimerEvent: {}
+[19.702419] (-) TimerEvent: {}
+[19.804375] (-) TimerEvent: {}
+[19.904751] (-) TimerEvent: {}
+[20.005458] (-) TimerEvent: {}
+[20.107629] (-) TimerEvent: {}
+[20.208187] (-) TimerEvent: {}
+[20.313416] (-) TimerEvent: {}
+[20.414562] (-) TimerEvent: {}
+[20.515581] (-) TimerEvent: {}
+[20.618486] (-) TimerEvent: {}
+[20.718999] (-) TimerEvent: {}
+[20.820032] (-) TimerEvent: {}
+[20.920763] (-) TimerEvent: {}
+[21.021797] (-) TimerEvent: {}
+[21.122495] (-) TimerEvent: {}
+[21.223072] (-) TimerEvent: {}
+[21.325331] (-) TimerEvent: {}
+[21.403846] (planning) StderrLine: {'line': b'gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76\xef\xbc\x9asrc/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[21.405944] (planning) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:411\xef\xbc\x9asrc/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[21.406076] (planning) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[21.425810] (-) TimerEvent: {}
+[21.529016] (-) TimerEvent: {}
+[21.633091] (-) TimerEvent: {}
+[21.735104] (-) TimerEvent: {}
+[21.836070] (-) TimerEvent: {}
+[21.937823] (-) TimerEvent: {}
+[22.038223] (-) TimerEvent: {}
+[22.138756] (-) TimerEvent: {}
+[22.239741] (-) TimerEvent: {}
+[22.341322] (-) TimerEvent: {}
+[22.441673] (-) TimerEvent: {}
+[22.543410] (-) TimerEvent: {}
+[22.643834] (-) TimerEvent: {}
+[22.750681] (-) TimerEvent: {}
+[22.851543] (-) TimerEvent: {}
+[22.951984] (-) TimerEvent: {}
+[23.052453] (-) TimerEvent: {}
+[23.153311] (-) TimerEvent: {}
+[23.254644] (-) TimerEvent: {}
+[23.355252] (-) TimerEvent: {}
+[23.455712] (-) TimerEvent: {}
+[23.556809] (-) TimerEvent: {}
+[23.657667] (-) TimerEvent: {}
+[23.758260] (-) TimerEvent: {}
+[23.858702] (-) TimerEvent: {}
+[23.962010] (-) TimerEvent: {}
+[24.063241] (-) TimerEvent: {}
+[24.165007] (-) TimerEvent: {}
+[24.265544] (-) TimerEvent: {}
+[24.365813] (-) TimerEvent: {}
+[24.466168] (-) TimerEvent: {}
+[24.566885] (-) TimerEvent: {}
+[24.670110] (-) TimerEvent: {}
+[24.770872] (-) TimerEvent: {}
+[24.873517] (-) TimerEvent: {}
+[24.976515] (-) TimerEvent: {}
+[25.080507] (-) TimerEvent: {}
+[25.116113] (planning) StdoutLine: {'line': b'[ 94%] Linking CXX executable planning_process\n'}
+[25.183322] (-) TimerEvent: {}
+[25.284386] (-) TimerEvent: {}
+[25.387079] (-) TimerEvent: {}
+[25.487552] (-) TimerEvent: {}
+[25.588797] (-) TimerEvent: {}
+[25.689882] (-) TimerEvent: {}
+[25.735358] (planning) StdoutLine: {'line': b'[ 97%] Built target planning_process\n'}
+[25.739340] (planning) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[25.749352] (planning) CommandEnded: {'returncode': 2}
+[25.775958] (planning) JobEnded: {'identifier': 'planning', 'rc': 2}
+[25.789576] (-) EventReactorShutdown: {}

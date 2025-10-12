@@ -1,0 +1,66 @@
+[0.411s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8
+[0.521s] [ 14%] Built target config_reader
+[0.521s] [ 14%] Built target mathlibs
+[0.556s] [35m[1mConsolidate compiler generated dependencies of target vehicle_info[0m
+[0.596s] [ 22%] Built target pnc_map_creator
+[0.606s] [ 28%] Built target global_planner
+[0.626s] [ 37%] Built target vehicle_info
+[0.626s] [ 45%] Built target reference_line
+[0.692s] [ 51%] Built target pnc_map_server
+[0.711s] [ 57%] Built target global_path_server
+[0.729s] [ 62%] Built target decision_center
+[0.737s] [ 68%] Built target obs_move_cmd
+[0.745s] [ 74%] Built target car_move_cmd
+[0.804s] [ 91%] Built target local_planner
+[0.873s] [ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process_main.cpp.o[0m
+[0.887s] [ 97%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o[0m
+[23.132s] [100%] [32m[1mLinking CXX executable planning_process[0m
+[24.301s] [100%] Built target planning_process
+[24.319s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8
+[24.322s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/x/planning_with_ROS2_course/build/planning
+[24.336s] -- Install configuration: ""
+[24.336s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so
+[24.336s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libmathlibs.so
+[24.336s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libdecision_center.so
+[24.336s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so
+[24.336s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/planning/pnc_map_server
+[24.336s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so
+[24.340s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/planning/global_path_server
+[24.341s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so
+[24.341s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libreference_line.so
+[24.341s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so
+[24.341s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/planning/planning_process
+[24.354s] -- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/planning/planning_process" to ""
+[24.354s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/planning/car_move_cmd
+[24.354s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/planning/obs_move_cmd
+[24.354s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/config
+[24.354s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/config/planning_static_obs_config.yaml
+[24.354s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/launch
+[24.354s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/launch/planning_launch.py
+[24.354s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf
+[24.354s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car
+[24.354s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car/obs_car.xacro
+[24.355s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car
+[24.357s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car.xacro
+[24.357s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_radar.xacro
+[24.357s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_wheels.xacro
+[24.357s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_camera.xacro
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_base.xacro
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/rviz
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/rviz/planning.rviz
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.sh
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.dsv
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/path.sh
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/path.dsv
+[24.358s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.bash
+[24.363s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.sh
+[24.363s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.zsh
+[24.364s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.dsv
+[24.364s] -- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/package.dsv
+[24.364s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/packages/planning
+[24.364s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig.cmake
+[24.364s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig-version.cmake
+[24.364s] -- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/package.xml
+[24.367s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/x/planning_with_ROS2_course/build/planning

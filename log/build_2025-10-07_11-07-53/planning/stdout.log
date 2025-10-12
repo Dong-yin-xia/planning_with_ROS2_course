@@ -1,0 +1,10 @@
+[  8%] Built target mathlibs
+[ 13%] Built target config_reader
+[ 18%] Built target osqp_test
+[ 21%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car_info.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car_info.cpp.o[0m
+[ 32%] Built target pnc_map_creator
+[ 40%] Built target reference_line
+[ 45%] Built target global_planner
+[ 51%] Built target pnc_map_server
+[ 56%] Built target global_path_server

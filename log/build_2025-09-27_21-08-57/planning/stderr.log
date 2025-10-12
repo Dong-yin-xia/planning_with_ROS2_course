@@ -1,0 +1,4 @@
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::Marker Planning::GlobalPathServer::path2marker(const Path&)[m[K’:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:82:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   82 |     Marker GlobalPathServer::path2marker([01;35m[Kconst Path &path[m[K)
+      |                                          [01;35m[K~~~~~~~~~~~~^~~~[m[K

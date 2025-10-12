@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from base_msgs/msg/ReferlinePoint.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PoseStamped.idl"
+
+module base_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "参考线点")
+    struct ReferlinePoint {
+      @verbatim (language="comment", text=
+        "位置和航向")
+      geometry_msgs::msg::PoseStamped pose;
+
+      @verbatim (language="comment", text=
+        "作为投影点的rs")
+      double rs;
+
+      @verbatim (language="comment", text=
+        "作为投影点的航向角")
+      double rtheta;
+
+      @verbatim (language="comment", text=
+        "作为投影点的曲率")
+      double rkappa;
+
+      @verbatim (language="comment", text=
+        "作为投影点的曲率变化率")
+      double rdkappa;
+    };
+  };
+};

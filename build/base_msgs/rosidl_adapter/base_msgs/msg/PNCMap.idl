@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from base_msgs/msg/PNCMap.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "visualization_msgs/msg/Marker.idl"
+
+module base_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "pnc地图")
+    struct PNCMap {
+      @verbatim (language="comment", text=
+        "消息头")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "道路长度")
+      double road_length;
+
+      @verbatim (language="comment", text=
+        "车道半宽")
+      double road_half_width;
+
+      @verbatim (language="comment", text=
+        "左边界")
+      visualization_msgs::msg::Marker left_boundary;
+
+      @verbatim (language="comment", text=
+        "右边界")
+      visualization_msgs::msg::Marker right_boundary;
+
+      @verbatim (language="comment", text=
+        "中心线")
+      visualization_msgs::msg::Marker midline;
+    };
+  };
+};

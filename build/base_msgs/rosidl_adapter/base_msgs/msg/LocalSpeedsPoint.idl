@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from base_msgs/msg/LocalSpeedsPoint.msg
+// generated code does not contain a copyright notice
+
+
+module base_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "速度点")
+    struct LocalSpeedsPoint {
+      @verbatim (language="comment", text=
+        "t")
+      double t;
+
+      @verbatim (language="comment", text=
+        "s_2path")
+      double s_2path;
+
+      @verbatim (language="comment", text=
+        "ds_dt_2path")
+      double ds_dt_2path;
+
+      @verbatim (language="comment", text=
+        "dds_dt_2path")
+      double dds_dt_2path;
+
+      @verbatim (language="comment", text=
+        "速度")
+      double speed;
+
+      @verbatim (language="comment", text=
+        "加速度")
+      double acceleration;
+
+      @verbatim (language="comment", text=
+        "加加速度")
+      double dacceleration;
+    };
+  };
+};

@@ -1,0 +1,19 @@
+[  5%] Built target config_reader
+[  8%] [32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/curve.cpp.o[0m
+[ 17%] Built target pnc_map_creator
+[ 22%] Built target global_planner
+[ 28%] Built target pnc_map_server
+[ 34%] Built target global_path_server
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/common/math/curve.cpp:[m[K In static member function ‘[01m[Kstatic void Planning::Curve::cal_projection_param(base_msgs::msg::Referline&)[m[K’:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/common/math/curve.cpp:64:33:[m[K [01;31m[Kerror: [m[K‘[01m[Krs[m[K’ was not declared in this scope
+   64 |                                 [01;31m[Krs[m[K = 0.0;
+      |                                 [01;31m[K^~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/common/math/curve.cpp:67:33:[m[K [01;31m[Kerror: [m[K‘[01m[Krs[m[K’ was not declared in this scope
+   67 |                                 [01;31m[Krs[m[K += std::hypot(refer_line.refer_line[i].pose.pose.position.y - refer_line.refer_line[i - 1].pose.pose.position.y,
+      |                                 [01;31m[K^~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/common/math/curve.cpp:70:55:[m[K [01;31m[Kerror: [m[K‘[01m[Krs[m[K’ was not declared in this scope
+   70 |                         refer_line.refer_line[i].rs = [01;31m[Krs[m[K;
+      |                                                       [01;31m[K^~[m[K
+gmake[2]: *** [src/common/CMakeFiles/mathlibs.dir/build.make:76：src/common/CMakeFiles/mathlibs.dir/math/curve.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:330：src/common/CMakeFiles/mathlibs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

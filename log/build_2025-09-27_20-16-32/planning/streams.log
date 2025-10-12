@@ -1,0 +1,22 @@
+[0.626s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8
+[0.826s] [  5%] Built target config_reader
+[0.834s] [ 14%] Built target mathlibs
+[0.887s] [35m[1mConsolidate compiler generated dependencies of target pnc_map_creator[0m
+[0.935s] [ 22%] Built target vehicle_info
+[0.978s] [ 34%] Built target global_planner
+[0.978s] [ 37%] Built target reference_line
+[0.999s] [ 40%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_sturn/pnc_map_creator_sturn.cpp.o[0m
+[1.055s] [ 45%] Built target car_move_cmd
+[1.056s] [ 51%] Built target decision_center
+[1.067s] [ 57%] Built target obs_move_cmd
+[1.116s] [ 62%] Built target global_path_server
+[1.167s] [ 80%] Built target local_planner
+[1.266s] [ 88%] Built target planning_process
+[8.080s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_sturn/pnc_map_creator_sturn.cpp:[m[K In member function ‘[01m[Kvirtual base_msgs::msg::PNCMap Planning::PNCMapCreatorSTurn::create_pnc_map()[m[K’:
+[8.080s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_sturn/pnc_map_creator_sturn.cpp:30:24:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(base_msgs::msg::PNCMap {aka base_msgs::msg::PNCMap_<std::allocator<void> >}) ()[m[K’
+[8.080s]    30 |         return [01;31m[Kpnc_map_()[m[K;
+[8.080s]       |                [01;31m[K~~~~~~~~^~[m[K
+[9.463s] gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/build.make:90：src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_sturn/pnc_map_creator_sturn.cpp.o] 错误 1
+[9.463s] gmake[1]: *** [CMakeFiles/Makefile2:384：src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/all] 错误 2
+[9.463s] gmake: *** [Makefile:146：all] 错误 2
+[9.470s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8

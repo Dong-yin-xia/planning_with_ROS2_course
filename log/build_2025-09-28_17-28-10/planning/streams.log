@@ -1,0 +1,26 @@
+[0.587s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8
+[0.726s] [  8%] Built target mathlibs
+[0.729s] [ 14%] Built target config_reader
+[0.819s] [ 20%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_sturn/pnc_map_creator_sturn.cpp.o[0m
+[0.819s] [ 28%] Built target vehicle_info
+[0.832s] [ 20%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o[0m
+[0.870s] [ 34%] Built target global_planner
+[0.870s] [ 42%] Built target reference_line
+[0.961s] [ 48%] Built target decision_center
+[1.002s] [ 54%] Built target obs_move_cmd
+[1.044s] [ 60%] Built target car_move_cmd
+[1.116s] [ 65%] Built target global_path_server
+[1.188s] [ 82%] Built target local_planner
+[1.325s] [ 85%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o[0m
+[12.455s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_straight/pnc_map_creator_straight.cpp:[m[K In constructor ‘[01m[KPlanning::PNCMapCreatorStraight::PNCMapCreatorStraight()[m[K’:
+[12.456s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_straight/pnc_map_creator_straight.cpp:30:38:[m[K [01;31m[Kerror: [m[K‘[01m[KPNCMapType[m[K’ has not been declared
+[12.461s]    30 |         map_type_ = static_cast<int>([01;31m[KPNCMapType[m[K::STRAIGHT);
+[12.461s]       |                                      [01;31m[K^~~~~~~~~~[m[K
+[15.986s] gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o] 错误 1
+[15.986s] gmake[2]: *** 正在等待未完成的任务....
+[16.861s] gmake[1]: *** [CMakeFiles/Makefile2:384：src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/all] 错误 2
+[16.861s] gmake[1]: *** 正在等待未完成的任务....
+[23.973s] [ 88%] [32m[1mLinking CXX executable planning_process[0m
+[24.650s] [ 91%] Built target planning_process
+[24.652s] gmake: *** [Makefile:146：all] 错误 2
+[24.658s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8

@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/**",
+                "/usr/local/include/eigen-3.4.0/**",
+                "/usr/include/eigen3/**",
+                "${workspaceFolder}/install/base_msgs/include/**"
+            ],
+            "defines": [
+                "DEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp",
+                "RCUTILS_ENABLE_FAULT_INJECTION"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

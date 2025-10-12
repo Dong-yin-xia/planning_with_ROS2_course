@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from base_msgs/srv/GlobalPathService.srv
+// generated code does not contain a copyright notice
+
+#include "base_msgs/msg/PNCMap.idl"
+#include "nav_msgs/msg/Path.idl"
+
+module base_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "全局规划服务")
+    struct GlobalPathService_Request {
+      @verbatim (language="comment", text=
+        "请求1: 全局规划类型")
+      int32 global_planner_type;
+
+      @verbatim (language="comment", text=
+        "请求2: 地图")
+      base_msgs::msg::PNCMap pnc_map;
+    };
+    struct GlobalPathService_Response {
+      @verbatim (language="comment", text=
+        "响应: 全局路径")
+      nav_msgs::msg::Path global_path;
+    };
+  };
+};

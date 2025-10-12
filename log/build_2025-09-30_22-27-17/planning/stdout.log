@@ -1,0 +1,84 @@
+[  2%] [32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/curve.cpp.o[0m
+[  8%] Built target config_reader
+[ 14%] Built target global_planner
+[ 22%] Built target pnc_map_creator
+[ 28%] Built target global_path_server
+[ 34%] Built target pnc_map_server
+[ 37%] [32m[1mLinking CXX shared library libmathlibs.so[0m
+[ 40%] Built target mathlibs
+[ 42%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car_info.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car_info.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o[0m
+[ 51%] [32m[1mLinking CXX shared library libvehicle_info.so[0m
+[ 51%] Built target vehicle_info
+[ 54%] [32mBuilding CXX object src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o[0m
+[ 62%] [32m[1mLinking CXX shared library libreference_line.so[0m
+[ 65%] Built target reference_line
+[ 68%] [32m[1mLinking CXX executable car_move_cmd[0m
+[ 71%] [32m[1mLinking CXX shared library libdecision_center.so[0m
+[ 71%] Built target decision_center
+[ 74%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_planner.cpp.o[0m
+[ 77%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_planner.cpp.o[0m
+[ 80%] [32m[1mLinking CXX executable obs_move_cmd[0m
+[ 80%] Built target car_move_cmd
+[ 80%] Built target obs_move_cmd
+[ 82%] [32m[1mLinking CXX shared library liblocal_planner.so[0m
+[ 91%] Built target local_planner
+[ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process_main.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o[0m
+[100%] [32m[1mLinking CXX executable planning_process[0m
+[100%] Built target planning_process
+-- Install configuration: ""
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so
+-- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libmathlibs.so
+-- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libmathlibs.so" to ""
+-- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libdecision_center.so
+-- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libdecision_center.so" to ""
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/planning/pnc_map_server
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/lib/planning/global_path_server
+-- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so
+-- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so" to ""
+-- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libreference_line.so
+-- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libreference_line.so" to ""
+-- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so
+-- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so" to ""
+-- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/planning/planning_process
+-- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/planning/planning_process" to ""
+-- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/planning/car_move_cmd
+-- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/planning/car_move_cmd" to ""
+-- Installing: /home/x/planning_with_ROS2_course/install/planning/lib/planning/obs_move_cmd
+-- Set runtime path of "/home/x/planning_with_ROS2_course/install/planning/lib/planning/obs_move_cmd" to ""
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/config
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/config/planning_static_obs_config.yaml
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/launch
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/launch/planning_launch.py
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car/obs_car.xacro
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car.xacro
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_radar.xacro
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_wheels.xacro
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_camera.xacro
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_base.xacro
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/rviz
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/rviz/planning.rviz
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.sh
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/path.sh
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/environment/path.dsv
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.bash
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.sh
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.zsh
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/local_setup.dsv
+-- Installing: /home/x/planning_with_ROS2_course/install/planning/share/planning/package.dsv
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/packages/planning
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig.cmake
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig-version.cmake
+-- Up-to-date: /home/x/planning_with_ROS2_course/install/planning/share/planning/package.xml

@@ -1,0 +1,25 @@
+[  5%] Built target config_reader
+[ 14%] Built target mathlibs
+[ 20%] Built target global_planner
+[ 28%] Built target pnc_map_creator
+[ 37%] Built target vehicle_info
+[ 45%] Built target reference_line
+[ 51%] Built target global_path_server
+[ 60%] Built target pnc_map_server
+[ 62%] Built target car_move_cmd
+[ 68%] Built target obs_move_cmd
+[ 74%] Built target decision_center
+[ 91%] Built target local_planner
+[35m[1mConsolidate compiler generated dependencies of target planning_process[0m
+[ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o[0m
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:[m[K In member function ‘[01m[Kvoid Planning::PlanningProcess::get_location(const std::shared_ptr<Planning::VehicleBase>&)[m[K’:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:141:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvehicle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  141 |     void PlanningProcess::get_location([01;35m[Kconst std::shared_ptr<VehicleBase> &vehicle[m[K) // 获取位置,监听定位点
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[ 97%] [32m[1mLinking CXX executable planning_process[0m
+/usr/bin/ld: CMakeFiles/planning_process.dir/planning_process.cpp.o: in function `Planning::PlanningProcess::process()':
+planning_process.cpp:(.text+0xd6f): undefined reference to `Planning::PlanningProcess::planning_callback()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [src/planning_process/CMakeFiles/planning_process.dir/build.make:254：src/planning_process/planning_process] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:578：src/planning_process/CMakeFiles/planning_process.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

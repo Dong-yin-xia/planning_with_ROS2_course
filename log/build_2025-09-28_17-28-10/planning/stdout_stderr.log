@@ -1,0 +1,24 @@
+[  8%] Built target mathlibs
+[ 14%] Built target config_reader
+[ 20%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_sturn/pnc_map_creator_sturn.cpp.o[0m
+[ 28%] Built target vehicle_info
+[ 20%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o[0m
+[ 34%] Built target global_planner
+[ 42%] Built target reference_line
+[ 48%] Built target decision_center
+[ 54%] Built target obs_move_cmd
+[ 60%] Built target car_move_cmd
+[ 65%] Built target global_path_server
+[ 82%] Built target local_planner
+[ 85%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o[0m
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_straight/pnc_map_creator_straight.cpp:[m[K In constructor ‘[01m[KPlanning::PNCMapCreatorStraight::PNCMapCreatorStraight()[m[K’:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_straight/pnc_map_creator_straight.cpp:30:38:[m[K [01;31m[Kerror: [m[K‘[01m[KPNCMapType[m[K’ has not been declared
+   30 |         map_type_ = static_cast<int>([01;31m[KPNCMapType[m[K::STRAIGHT);
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:384：src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 88%] [32m[1mLinking CXX executable planning_process[0m
+[ 91%] Built target planning_process
+gmake: *** [Makefile:146：all] 错误 2

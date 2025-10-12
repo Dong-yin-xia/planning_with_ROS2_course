@@ -1,0 +1,68 @@
+[0.451s] Invoking command in '/home/x/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8
+[0.553s] [  5%] Built target config_reader
+[0.563s] [ 14%] Built target mathlibs
+[0.622s] [ 20%] Built target global_planner
+[0.623s] [ 28%] Built target pnc_map_creator
+[0.641s] [ 37%] Built target reference_line
+[0.655s] [ 45%] Built target vehicle_info
+[0.728s] [ 51%] Built target global_path_server
+[0.741s] [ 57%] Built target pnc_map_server
+[0.741s] [ 62%] Built target decision_center
+[0.749s] [ 68%] Built target car_move_cmd
+[0.766s] [ 74%] Built target obs_move_cmd
+[0.862s] [ 91%] Built target local_planner
+[0.915s] [35m[1mConsolidate compiler generated dependencies of target planning_process[0m
+[0.957s] [ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o[0m
+[9.792s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[9.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[9.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[9.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[9.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[9.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[9.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[9.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[9.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[9.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[9.795s]                  from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.h:4[m[K,
+[9.795s]                  from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:25[m[K:
+[9.795s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:280:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[9.795s]   280 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "-----车俩状态: loc = ( %.2f, %.2f), speed = %.2f, a = %.2f, theta = %.2f, kappa = %.2f",
+[9.795s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[9.796s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:280:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[9.796s]   280 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "-----车俩状态: loc = ( %.2f, %.2f), speed = %.2f, a = %.2f, theta = %.2f, kappa = %.2f",
+[9.796s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[9.796s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:288:31:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ at top level
+[9.796s]   288 |         const auto end_time = [01;31m[Kthis[m[K->get_clock()->now();
+[9.796s]       |                               [01;31m[K^~~~[m[K
+[9.804s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:289:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kstrptime[m[K’?
+[9.805s]   289 |         const double planner_total_time = end_time.seconds() - [01;31m[Kstart_time[m[K.seconds();
+[9.805s]       |                                                                [01;31m[K^~~~~~~~~~[m[K
+[9.805s]       |                                                                [32m[Kstrptime[m[K
+[9.805s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[9.805s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[9.805s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[9.805s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[9.806s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[9.806s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[9.806s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[9.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[9.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[9.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[9.807s]                  from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.h:4[m[K,
+[9.807s]                  from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:25[m[K:
+[9.808s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:290:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[9.808s]   290 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "-----规划总时间: %f ms\n", planner_total_time * 1000);
+[9.808s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[9.808s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:290:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[9.808s]   290 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "-----规划总时间: %f ms\n", planner_total_time * 1000);
+[9.808s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[9.808s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:293:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[9.808s]   293 |         [01;31m[Kif[m[K(planner_total_time > 1.0)
+[9.808s]       |         [01;31m[K^~[m[K
+[9.808s] [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:300:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[9.808s]   300 | [01;31m[K}[m[K // namespace Planning
+[9.808s]       | [01;31m[K^[m[K
+[18.153s] gmake[2]: *** [src/planning_process/CMakeFiles/planning_process.dir/build.make:90：src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o] 错误 1
+[18.153s] gmake[1]: *** [CMakeFiles/Makefile2:578：src/planning_process/CMakeFiles/planning_process.dir/all] 错误 2
+[18.153s] gmake: *** [Makefile:146：all] 错误 2
+[18.158s] Invoked command in '/home/x/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/x/planning_with_ROS2_course/install/base_msgs:/home/x/planning_with_ROS2_course/install/planning:/home/x/planning_with_ROS2_course/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/x/planning_with_ROS2_course/install/base_msgs/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/home/x/planning_with_ROS2_course/install/planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/planning -- -j8 -l8

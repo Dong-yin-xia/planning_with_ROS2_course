@@ -1,0 +1,14 @@
+[  5%] Built target config_reader
+[ 14%] Built target mathlibs
+[ 20%] Built target global_planner
+[ 28%] Built target pnc_map_creator
+[ 37%] Built target reference_line
+[ 45%] Built target vehicle_info
+[ 51%] Built target global_path_server
+[ 57%] Built target pnc_map_server
+[ 62%] Built target decision_center
+[ 68%] Built target car_move_cmd
+[ 74%] Built target obs_move_cmd
+[ 91%] Built target local_planner
+[35m[1mConsolidate compiler generated dependencies of target planning_process[0m
+[ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o[0m

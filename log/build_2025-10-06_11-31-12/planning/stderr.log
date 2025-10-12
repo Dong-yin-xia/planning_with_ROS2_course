@@ -1,0 +1,13 @@
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/common/math/curve.cpp:[m[K In static member function ‘[01m[Kstatic void Planning::Curve::find_projection_point(const Referline&, const PoseStamped&, double&, double&, double&, double&, double&, double&)[m[K’:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/common/math/curve.cpp:182:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kry[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  182 |                                           double &rs, double &rx, [01;35m[Kdouble &ry[m[K,
+      |                                                                   [01;35m[K~~~~~~~~^~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/common/math/curve.cpp:183:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krtheta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  183 |                                           [01;35m[Kdouble &rtheta[m[K, double &rkappa, double &rdkappa) // 输出：目标点在参考线的投影点在笛卡尔下的参数 rs rx ry rtheta rkappa rdkappa
+      |                                           [01;35m[K~~~~~~~~^~~~~~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/common/math/curve.cpp:183:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krkappa[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  183 |                                           double &rtheta, [01;35m[Kdouble &rkappa[m[K, double &rdkappa) // 输出：目标点在参考线的投影点在笛卡尔下的参数 rs rx ry rtheta rkappa rdkappa
+      |                                                           [01;35m[K~~~~~~~~^~~~~~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/common/math/curve.cpp:183:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krdkappa[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  183 |                                           double &rtheta, double &rkappa, [01;35m[Kdouble &rdkappa[m[K) // 输出：目标点在参考线的投影点在笛卡尔下的参数 rs rx ry rtheta rkappa rdkappa
+      |                                                                           [01;35m[K~~~~~~~~^~~~~~~[m[K

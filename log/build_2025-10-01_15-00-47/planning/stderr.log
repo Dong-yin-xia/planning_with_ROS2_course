@@ -1,0 +1,7 @@
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.cpp:[m[K In member function ‘[01m[Kbase_msgs::msg::Referline Planning::ReferencelineCreator::create_reference_line(const Path&, const PoseStamped&)[m[K’:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.cpp:38:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kglobal_path[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 |     Referline ReferencelineCreator::create_reference_line([01;35m[Kconst Path &global_path[m[K,
+      |                                                           [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.cpp:39:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_point[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   39 |                                                           [01;35m[Kconst PoseStamped &target_point[m[K)
+      |                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K

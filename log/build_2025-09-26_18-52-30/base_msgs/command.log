@@ -1,0 +1,4 @@
+Invoking command in '/home/x/planning_with_ROS2_course/build/base_msgs': /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/base_msgs -- -j8 -l8
+Invoked command in '/home/x/planning_with_ROS2_course/build/base_msgs' returned '0': /usr/bin/cmake --build /home/x/planning_with_ROS2_course/build/base_msgs -- -j8 -l8
+Invoking command in '/home/x/planning_with_ROS2_course/build/base_msgs': /usr/bin/cmake --install /home/x/planning_with_ROS2_course/build/base_msgs
+Invoked command in '/home/x/planning_with_ROS2_course/build/base_msgs' returned '0': /usr/bin/cmake --install /home/x/planning_with_ROS2_course/build/base_msgs

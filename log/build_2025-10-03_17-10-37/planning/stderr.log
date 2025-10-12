@@ -1,0 +1,52 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.h:4[m[K,
+                 from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:25[m[K:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:280:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+  280 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "-----车俩状态: loc = ( %.2f, %.2f), speed = %.2f, a = %.2f, theta = %.2f, kappa = %.2f",
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:280:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+  280 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "-----车俩状态: loc = ( %.2f, %.2f), speed = %.2f, a = %.2f, theta = %.2f, kappa = %.2f",
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:288:31:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ at top level
+  288 |         const auto end_time = [01;31m[Kthis[m[K->get_clock()->now();
+      |                               [01;31m[K^~~~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:289:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kstrptime[m[K’?
+  289 |         const double planner_total_time = end_time.seconds() - [01;31m[Kstart_time[m[K.seconds();
+      |                                                                [01;31m[K^~~~~~~~~~[m[K
+      |                                                                [32m[Kstrptime[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.h:4[m[K,
+                 from [01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:25[m[K:
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:290:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+  290 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "-----规划总时间: %f ms\n", planner_total_time * 1000);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:290:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+  290 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "-----规划总时间: %f ms\n", planner_total_time * 1000);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:293:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  293 |         [01;31m[Kif[m[K(planner_total_time > 1.0)
+      |         [01;31m[K^~[m[K
+[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:300:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  300 | [01;31m[K}[m[K // namespace Planning
+      | [01;31m[K^[m[K
+gmake[2]: *** [src/planning_process/CMakeFiles/planning_process.dir/build.make:90：src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:578：src/planning_process/CMakeFiles/planning_process.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

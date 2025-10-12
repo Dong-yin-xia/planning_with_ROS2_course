@@ -1,0 +1,77 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from base_msgs/msg/LocalPathPoint.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PoseStamped.idl"
+
+module base_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "路径点")
+    struct LocalPathPoint {
+      @verbatim (language="comment", text=
+        "位置和航向")
+      geometry_msgs::msg::PoseStamped pose;
+
+      @verbatim (language="comment", text=
+        "s")
+      double s;
+
+      @verbatim (language="comment", text=
+        "l")
+      double l;
+
+      @verbatim (language="comment", text=
+        "ds/dt")
+      double ds_dt;
+
+      @verbatim (language="comment", text=
+        "l'")
+      double dl_ds;
+
+      @verbatim (language="comment", text=
+        "dl_dt")
+      double dl_dt;
+
+      @verbatim (language="comment", text=
+        "dds/dt")
+      double dds_dt;
+
+      @verbatim (language="comment", text=
+        "l''")
+      double ddl_ds;
+
+      @verbatim (language="comment", text=
+        "ddl_dt")
+      double ddl_dt;
+
+      @verbatim (language="comment", text=
+        "航向角")
+      double theta;
+
+      @verbatim (language="comment", text=
+        "曲率")
+      double kappa;
+
+      @verbatim (language="comment", text=
+        "曲率变化率")
+      double dkappa;
+
+      @verbatim (language="comment", text=
+        "作为投影点的rs")
+      double rs;
+
+      @verbatim (language="comment", text=
+        "作为投影点的航向角")
+      double rtheta;
+
+      @verbatim (language="comment", text=
+        "作为投影点的曲率")
+      double rkappa;
+
+      @verbatim (language="comment", text=
+        "作为投影点的曲率变化率")
+      double rdkappa;
+    };
+  };
+};

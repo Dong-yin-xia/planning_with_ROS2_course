@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+../../build/data_plot/data_plot.egg-info/PKG-INFO
+../../build/data_plot/data_plot.egg-info/SOURCES.txt
+../../build/data_plot/data_plot.egg-info/dependency_links.txt
+../../build/data_plot/data_plot.egg-info/entry_points.txt
+../../build/data_plot/data_plot.egg-info/requires.txt
+../../build/data_plot/data_plot.egg-info/top_level.txt
+../../build/data_plot/data_plot.egg-info/zip-safe
+data_plot/__init__.py
+data_plot/data_plot.py
+resource/data_plot

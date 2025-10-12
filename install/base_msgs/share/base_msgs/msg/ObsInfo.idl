@@ -1,0 +1,44 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from base_msgs/msg/ObsInfo.msg
+// generated code does not contain a copyright notice
+
+
+module base_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "障碍物")
+    struct ObsInfo {
+      @verbatim (language="comment", text=
+        "长")
+      double obs_length;
+
+      @verbatim (language="comment", text=
+        "宽")
+      double obs_width;
+
+      @verbatim (language="comment", text=
+        "参考线投影的l")
+      double l;
+
+      @verbatim (language="comment", text=
+        "参考线投影的s")
+      double s;
+
+      @verbatim (language="comment", text=
+        "路径投影的s")
+      double s_2path;
+
+      @verbatim (language="comment", text=
+        "路径投影的速度(就是笛卡尔坐标下的速度)")
+      double ds_dt_2path;
+
+      @verbatim (language="comment", text=
+        "进入路径时间")
+      double t_in;
+
+      @verbatim (language="comment", text=
+        "退出路径时间")
+      double t_out;
+    };
+  };
+};

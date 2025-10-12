@@ -1,0 +1,25 @@
+[  8%] Built target mathlibs
+[ 14%] Built target config_reader
+[ 22%] Built target reference_line
+[ 31%] Built target pnc_map_creator
+[ 37%] Built target global_planner
+[ 45%] Built target vehicle_info
+Consolidate compiler generated dependencies of target pnc_map_server
+[ 51%] Built target decision_center
+[ 57%] Built target global_path_server
+[ 60%] Building CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o
+[ 65%] Built target car_move_cmd
+[ 71%] Built target obs_move_cmd
+[ 88%] Built target local_planner
+Consolidate compiler generated dependencies of target planning_process
+[ 97%] Built target planning_process
+/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp: In member function ‘void Planning::PNCMapServer::response_pnc_map_callback(std::shared_ptr<base_msgs::srv::PNCMapService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::PNCMapService_Response_<std::allocator<void> > >)’:
+/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:47:45: error: ‘Planning::MapType’ has not been declared
+   47 |             case static_cast<int>(Planning::MapType::STRAIGHT): // 直线路径
+      |                                             ^~~~~~~
+/home/x/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:50:45: error: ‘Planning::MapType’ has not been declared
+   50 |             case static_cast<int>(Planning::MapType::STERN): // 转角路径
+      |                                             ^~~~~~~
+gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:411：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
