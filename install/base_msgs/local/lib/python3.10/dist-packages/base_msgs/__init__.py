@@ -1,0 +1,1 @@
+/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_generator_py/base_msgs/__init__.py

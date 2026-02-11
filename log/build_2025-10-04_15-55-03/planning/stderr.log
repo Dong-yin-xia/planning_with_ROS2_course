@@ -1,6 +1,0 @@
-[31mCMake Error at CMakeLists.txt:69 (add_subdirectory):
-  add_subdirectory given source "src/text" which is not an existing
-  directory.
-
-[0m
-gmake: *** [Makefile:408：cmake_check_build_system] 错误 1

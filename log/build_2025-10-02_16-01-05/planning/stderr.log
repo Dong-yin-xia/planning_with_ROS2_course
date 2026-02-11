@@ -1,4 +1,0 @@
-[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:[m[K In member function ‘[01m[Kvoid Planning::PlanningProcess::get_location(const std::shared_ptr<Planning::VehicleBase>&)[m[K’:
-[01m[K/home/x/planning_with_ROS2_course/src/planning/src/planning_process/planning_process.cpp:141:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvehicle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-  141 |     void PlanningProcess::get_location([01;35m[Kconst std::shared_ptr<VehicleBase> &vehicle[m[K) // 获取位置,监听定位点
-      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K

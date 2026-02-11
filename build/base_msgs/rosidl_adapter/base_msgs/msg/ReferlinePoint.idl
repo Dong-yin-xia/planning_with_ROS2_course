@@ -14,7 +14,7 @@ module base_msgs {
       geometry_msgs::msg::PoseStamped pose;
 
       @verbatim (language="comment", text=
-        "作为投影点的rs")
+        "作为投影点的rs，对于frenet参考线的S")
       double rs;
 
       @verbatim (language="comment", text=

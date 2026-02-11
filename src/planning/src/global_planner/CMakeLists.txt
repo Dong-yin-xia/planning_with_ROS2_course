@@ -13,6 +13,7 @@ set(DEPENDS
 # 添加动态库
 add_library(global_planner SHARED 
   ${CMAKE_CURRENT_SOURCE_DIR}/global_planner_normal/global_planner_normal.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/global_planner_astar/global_planner_astar.cpp
 )
 
 # 添加节点

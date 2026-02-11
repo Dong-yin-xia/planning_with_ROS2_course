@@ -30,7 +30,7 @@ typedef struct base_msgs__msg__ReferlinePoint
 {
   /// 位置和航向
   geometry_msgs__msg__PoseStamped pose;
-  /// 作为投影点的rs
+  /// 作为投影点的rs，对于frenet参考线的S
   double rs;
   /// 作为投影点的航向角
   double rtheta;

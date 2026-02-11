@@ -1,7 +1,7 @@
 src/common/CMakeFiles/config_reader.dir/config_reader/config_reader.cpp.o: \
- /home/x/planning_with_ROS2_course/src/planning/src/common/config_reader/config_reader.cpp \
+ /home/x/xiugai/planning_with_ROS2_course/src/planning/src/common/config_reader/config_reader.cpp \
  /usr/include/stdc-predef.h \
- /home/x/planning_with_ROS2_course/src/planning/src/common/config_reader/config_reader.h \
+ /home/x/xiugai/planning_with_ROS2_course/src/planning/src/common/config_reader/config_reader.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

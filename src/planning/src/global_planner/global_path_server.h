@@ -6,6 +6,7 @@
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "visualization_msgs/msg/marker.hpp"
 #include "global_planner_normal.h"
+#include "global_planner_astar/global_planner_astar.h" // Add A* planner header
 #include <geometry_msgs/msg/detail/point__struct.hpp>
 
 namespace Planning

@@ -67,6 +67,11 @@ def generate_launch_description():
     )
 
     # 启动绘图节点
+    data_plot = Node(
+        package="data_plot",
+        executable="data_plot",
+        name="data_plot",
+    )
 
     # 启动地图服务器节点
     pnc_map_server = Node(
@@ -119,6 +124,7 @@ def generate_launch_description():
             car_main,
             obs_car,
             rviz2,
+            data_plot,
             planning,
         ]
     )

@@ -1,7 +1,7 @@
 src/common/CMakeFiles/mathlibs.dir/math/polynomial_curve.cpp.o: \
- /home/x/planning_with_ROS2_course/src/planning/src/common/math/polynomial_curve.cpp \
+ /home/x/xiugai/planning_with_ROS2_course/src/planning/src/common/math/polynomial_curve.cpp \
  /usr/include/stdc-predef.h \
- /home/x/planning_with_ROS2_course/src/planning/src/common/math/polynomial_curve.h \
+ /home/x/xiugai/planning_with_ROS2_course/src/planning/src/common/math/polynomial_curve.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

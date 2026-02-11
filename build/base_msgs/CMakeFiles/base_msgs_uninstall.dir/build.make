@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/planning_with_ROS2_course/src/base_msgs
+CMAKE_SOURCE_DIR = /home/x/xiugai/planning_with_ROS2_course/src/base_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/planning_with_ROS2_course/build/base_msgs
+CMAKE_BINARY_DIR = /home/x/xiugai/planning_with_ROS2_course/build/base_msgs
 
 # Utility rule file for base_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/base_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/base_msgs_uninstall.dir/progress.make
 
 CMakeFiles/base_msgs_uninstall:
-	/usr/bin/cmake -P /home/x/planning_with_ROS2_course/build/base_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 base_msgs_uninstall: CMakeFiles/base_msgs_uninstall
 base_msgs_uninstall: CMakeFiles/base_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/base_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/base_msgs_uninstall.dir/clean
 
 CMakeFiles/base_msgs_uninstall.dir/depend:
-	cd /home/x/planning_with_ROS2_course/build/base_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/planning_with_ROS2_course/src/base_msgs /home/x/planning_with_ROS2_course/src/base_msgs /home/x/planning_with_ROS2_course/build/base_msgs /home/x/planning_with_ROS2_course/build/base_msgs /home/x/planning_with_ROS2_course/build/base_msgs/CMakeFiles/base_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/xiugai/planning_with_ROS2_course/build/base_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/xiugai/planning_with_ROS2_course/src/base_msgs /home/x/xiugai/planning_with_ROS2_course/src/base_msgs /home/x/xiugai/planning_with_ROS2_course/build/base_msgs /home/x/xiugai/planning_with_ROS2_course/build/base_msgs /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/CMakeFiles/base_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/base_msgs_uninstall.dir/depend
 

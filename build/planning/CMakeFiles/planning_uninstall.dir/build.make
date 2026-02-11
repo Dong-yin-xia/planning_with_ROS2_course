@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/planning_with_ROS2_course/src/planning
+CMAKE_SOURCE_DIR = /home/x/xiugai/planning_with_ROS2_course/src/planning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/planning_with_ROS2_course/build/planning
+CMAKE_BINARY_DIR = /home/x/xiugai/planning_with_ROS2_course/build/planning
 
 # Utility rule file for planning_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/planning_uninstall.dir/compiler_depend.make
 include CMakeFiles/planning_uninstall.dir/progress.make
 
 CMakeFiles/planning_uninstall:
-	/usr/bin/cmake -P /home/x/planning_with_ROS2_course/build/planning/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/x/xiugai/planning_with_ROS2_course/build/planning/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 planning_uninstall: CMakeFiles/planning_uninstall
 planning_uninstall: CMakeFiles/planning_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/planning_uninstall.dir/clean:
 .PHONY : CMakeFiles/planning_uninstall.dir/clean
 
 CMakeFiles/planning_uninstall.dir/depend:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/planning_with_ROS2_course/src/planning /home/x/planning_with_ROS2_course/src/planning /home/x/planning_with_ROS2_course/build/planning /home/x/planning_with_ROS2_course/build/planning /home/x/planning_with_ROS2_course/build/planning/CMakeFiles/planning_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/xiugai/planning_with_ROS2_course/src/planning /home/x/xiugai/planning_with_ROS2_course/src/planning /home/x/xiugai/planning_with_ROS2_course/build/planning /home/x/xiugai/planning_with_ROS2_course/build/planning /home/x/xiugai/planning_with_ROS2_course/build/planning/CMakeFiles/planning_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/planning_uninstall.dir/depend
 

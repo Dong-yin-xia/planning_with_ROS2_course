@@ -46,7 +46,9 @@ namespace Planning
 
     PNCMap PNCMapCreatorSTurn::create_pnc_map() // 创建S弯道地图
     {
+        // 调用 draw_straight_x 函数，绘制总道路长度的三分之一作为S弯的起始直线段， 1.0，表示沿X轴正方向延伸。
         draw_straight_x(pnc_map_config_->pnc_map().road_length_ / 3.0, 1.0);
+        // 调用 draw_arc 函数，绘制90度弧线，1.0，表示沿逆时针方向延伸。
         draw_arc(M_PI_2, 1.0);
         draw_arc(M_PI_2, -1.0);
 
@@ -61,7 +63,7 @@ namespace Planning
         pnc_map_markerarray_.markers.emplace_back(pnc_map_.left_boundary);
         pnc_map_markerarray_.markers.emplace_back(pnc_map_.right_boundary);
 
-        RCLCPP_INFO(rclcpp::get_logger("pnc_map"), "pnc_map created,midline points size: %ld ------ ", pnc_map_.midline.points.size());
+        RCLCPP_INFO(rclcpp::get_logger("pnc_map"), "pnc_map已创建,中线点数： %ld ------ ", pnc_map_.midline.points.size());
         
         return pnc_map_;
     }
@@ -121,7 +123,8 @@ namespace Planning
         }
     }
 
-    void PNCMapCreatorSTurn::draw_arc(const double &angle, const double &plus_flag, const double &ratio) // 画弧线,逆时针为正方向，顺时针为负方向，angle为总角度
+    // 画弧线,逆时针为正方向，顺时针为负方向，angle为总角度
+    void PNCMapCreatorSTurn::draw_arc(const double &angle, const double &plus_flag, const double &ratio) 
     {
         double theta_tmp = 0.0;
         while (theta_tmp < angle)

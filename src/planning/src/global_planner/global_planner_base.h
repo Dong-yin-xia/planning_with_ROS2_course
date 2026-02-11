@@ -15,7 +15,8 @@ namespace Planning
 
     enum class GlobalPlannerType // 全局路径规划器类型
     {
-        NORMAL
+        NORMAL,
+        ASTAR
     };
 
     class GlobalPlannerBase // 全局路径规划器基类

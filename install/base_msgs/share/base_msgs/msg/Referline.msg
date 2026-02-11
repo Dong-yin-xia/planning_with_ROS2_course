@@ -1,4 +1,1 @@
-# 参考线
-
-std_msgs/Header header      # 消息头, 用于坐标系和时间同步
-ReferlinePoint[] refer_line # 路径
+/home/x/xiugai/planning_with_ROS2_course/src/base_msgs/msg/Referline.msg

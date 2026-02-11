@@ -23,16 +23,12 @@ namespace Planning
 {
     GlobalPlannerNormal::GlobalPlannerNormal() // 普通全局路径规划器
     {
-        RCLCPP_INFO(rclcpp::get_logger("global_path"), "global_planner_normal created");
-
-        global_planner_config_ = std::make_unique<ConfigReader>();
-        global_planner_config_->read_global_path_config();
-        global_planner_type_ = static_cast<int>(GlobalPlannerType::NORMAL);
+        RCLCPP_INFO(rclcpp::get_logger("global_path"), "全局路径_normal已创建");
     }
 
     Path GlobalPlannerNormal::search_global_path(const PNCMap &pnc_map) // 搜索全局路径
     {
-        RCLCPP_INFO(rclcpp::get_logger("global_path"), "using normal global planner 使用normal路径规划");
+        RCLCPP_INFO(rclcpp::get_logger("global_path"), "使用normal路径规划");
 
         global_path_.header.frame_id = pnc_map.header.frame_id;
         global_path_.header.stamp = rclcpp::Clock().now();

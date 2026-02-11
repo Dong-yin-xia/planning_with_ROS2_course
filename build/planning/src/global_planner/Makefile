@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/planning_with_ROS2_course/src/planning
+CMAKE_SOURCE_DIR = /home/x/xiugai/planning_with_ROS2_course/src/planning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/planning_with_ROS2_course/build/planning
+CMAKE_BINARY_DIR = /home/x/xiugai/planning_with_ROS2_course/build/planning
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/x/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -E cmake_progress_start /home/x/planning_with_ROS2_course/build/planning/CMakeFiles /home/x/planning_with_ROS2_course/build/planning/src/global_planner//CMakeFiles/progress.marks
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/planning_with_ROS2_course/build/planning/CMakeFiles 0
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -E cmake_progress_start /home/x/xiugai/planning_with_ROS2_course/build/planning/CMakeFiles /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner//CMakeFiles/progress.marks
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/xiugai/planning_with_ROS2_course/build/planning/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/clean
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/preinstall
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/preinstall
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/global_planner/CMakeFiles/global_planner.dir/rule:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/CMakeFiles/global_planner.dir/rule
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/CMakeFiles/global_planner.dir/rule
 .PHONY : src/global_planner/CMakeFiles/global_planner.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ global_planner: src/global_planner/CMakeFiles/global_planner.dir/rule
 
 # fast build rule for target.
 global_planner/fast:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/build
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/build
 .PHONY : global_planner/fast
 
 # Convenience name for target.
 src/global_planner/CMakeFiles/global_path_server.dir/rule:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/CMakeFiles/global_path_server.dir/rule
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/CMakeFiles/global_path_server.dir/rule
 .PHONY : src/global_planner/CMakeFiles/global_path_server.dir/rule
 
 # Convenience name for target.
@@ -196,7 +196,7 @@ global_path_server: src/global_planner/CMakeFiles/global_path_server.dir/rule
 
 # fast build rule for target.
 global_path_server/fast:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/build
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/build
 .PHONY : global_path_server/fast
 
 global_path_server.o: global_path_server.cpp.o
@@ -204,7 +204,7 @@ global_path_server.o: global_path_server.cpp.o
 
 # target to build an object file
 global_path_server.cpp.o:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o
 .PHONY : global_path_server.cpp.o
 
 global_path_server.i: global_path_server.cpp.i
@@ -212,7 +212,7 @@ global_path_server.i: global_path_server.cpp.i
 
 # target to preprocess a source file
 global_path_server.cpp.i:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.i
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.i
 .PHONY : global_path_server.cpp.i
 
 global_path_server.s: global_path_server.cpp.s
@@ -220,15 +220,39 @@ global_path_server.s: global_path_server.cpp.s
 
 # target to generate assembly for a file
 global_path_server.cpp.s:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.s
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.s
 .PHONY : global_path_server.cpp.s
+
+global_planner_astar/global_planner_astar.o: global_planner_astar/global_planner_astar.cpp.o
+.PHONY : global_planner_astar/global_planner_astar.o
+
+# target to build an object file
+global_planner_astar/global_planner_astar.cpp.o:
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o
+.PHONY : global_planner_astar/global_planner_astar.cpp.o
+
+global_planner_astar/global_planner_astar.i: global_planner_astar/global_planner_astar.cpp.i
+.PHONY : global_planner_astar/global_planner_astar.i
+
+# target to preprocess a source file
+global_planner_astar/global_planner_astar.cpp.i:
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.i
+.PHONY : global_planner_astar/global_planner_astar.cpp.i
+
+global_planner_astar/global_planner_astar.s: global_planner_astar/global_planner_astar.cpp.s
+.PHONY : global_planner_astar/global_planner_astar.s
+
+# target to generate assembly for a file
+global_planner_astar/global_planner_astar.cpp.s:
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.s
+.PHONY : global_planner_astar/global_planner_astar.cpp.s
 
 global_planner_normal/global_planner_normal.o: global_planner_normal/global_planner_normal.cpp.o
 .PHONY : global_planner_normal/global_planner_normal.o
 
 # target to build an object file
 global_planner_normal/global_planner_normal.cpp.o:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o
 .PHONY : global_planner_normal/global_planner_normal.cpp.o
 
 global_planner_normal/global_planner_normal.i: global_planner_normal/global_planner_normal.cpp.i
@@ -236,7 +260,7 @@ global_planner_normal/global_planner_normal.i: global_planner_normal/global_plan
 
 # target to preprocess a source file
 global_planner_normal/global_planner_normal.cpp.i:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.i
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.i
 .PHONY : global_planner_normal/global_planner_normal.cpp.i
 
 global_planner_normal/global_planner_normal.s: global_planner_normal/global_planner_normal.cpp.s
@@ -244,7 +268,7 @@ global_planner_normal/global_planner_normal.s: global_planner_normal/global_plan
 
 # target to generate assembly for a file
 global_planner_normal/global_planner_normal.cpp.s:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.s
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_planner.dir/build.make src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.s
 .PHONY : global_planner_normal/global_planner_normal.cpp.s
 
 # Help Target
@@ -265,6 +289,9 @@ help:
 	@echo "... global_path_server.o"
 	@echo "... global_path_server.i"
 	@echo "... global_path_server.s"
+	@echo "... global_planner_astar/global_planner_astar.o"
+	@echo "... global_planner_astar/global_planner_astar.i"
+	@echo "... global_planner_astar/global_planner_astar.s"
 	@echo "... global_planner_normal/global_planner_normal.o"
 	@echo "... global_planner_normal/global_planner_normal.i"
 	@echo "... global_planner_normal/global_planner_normal.s"
@@ -279,6 +306,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

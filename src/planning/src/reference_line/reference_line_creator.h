@@ -1,48 +1,45 @@
 #ifndef REFERENCE_LINE_CREATOR_H_
 #define REFERENCE_LINE_CREATOR_H_
 
-#include "rclcpp/rclcpp.hpp"    //ROS2的头文件
 #include "reference_line_smoother.h"
-#include "base_msgs/msg/referline.hpp"
-#include "base_msgs/msg/referline_point.hpp"
-#include "nav_msgs/msg/path.hpp"
-#include "geometry_msgs/msg/pose_stamped.hpp"
 
 #include "config_reader.h"   //自定义的头文件
-#include "curve.h"
 #include <cmath>
 #include <memory>
-#include <nav_msgs/msg/detail/path__struct.hpp>
+#include "base_msgs/msg/referline.hpp"
+#include "nav_msgs/msg/path.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
 
 
 namespace Planning
 {
-    using base_msgs::msg::Referline;
-    using base_msgs::msg::ReferlinePoint;
-    using geometry_msgs::msg::PoseStamped;
-    using nav_msgs::msg::Path;
 
     class ReferencelineCreator // 创建参考线
     {
     public:
         ReferencelineCreator();
 
-        Referline create_reference_line(const Path &global_path,
-                                        const PoseStamped &target_point); // 创建参考线, 输入全局路径和当前定位点
-        Path referline_to_rviz();  // 获取参考线rviz
+        base_msgs::msg::Referline create_reference_line(const nav_msgs::msg::Path &global_path,
+                                        const geometry_msgs::msg::PoseStamped &target_point); // 创建参考线, 输入全局路径和当前定位点
+        // 重载：基于参考线拼接的方式创建参考线
+        // 入参：上一帧参考线（可为空）、当前全局路径、当前定位点
+        base_msgs::msg::Referline create_reference_line(const base_msgs::msg::Referline &prev_refer_line,
+                                        const nav_msgs::msg::Path &global_path,
+                                        const geometry_msgs::msg::PoseStamped &target_point);
+        nav_msgs::msg::Path referline_to_rviz();  // 获取参考线rviz
 
 
     public:
-        inline Referline reference_line() const {return refer_line_;} // 获取参考线
-        inline Path reference_line_rviz() const {return refer_line_rviz_;}  // 获取参考线rviz
+        inline base_msgs::msg::Referline reference_line() const {return refer_line_;} // 获取参考线
+        inline nav_msgs::msg::Path reference_line_rviz() const {return refer_line_rviz_;}  // 获取参考线rviz
         inline int match_point_index() const {return match_point_index_;} // 获取当前匹配点的下标
         inline int front_index() const {return front_index_;} // 获取前方点数下标
         inline int back_index() const {return back_index_;} // 获取后方点数下标
 
     private:
         std::unique_ptr<ConfigReader> reference_line_config_;   // 成员变量要记得加_
-        Referline refer_line_;                                  // 参考线
-        Path refer_line_rviz_;                                  // 参考线rviz
+        base_msgs::msg::Referline refer_line_;                                  // 参考线
+        nav_msgs::msg::Path refer_line_rviz_;                                  // 参考线rviz
         std::shared_ptr<ReferenceLineSmoother> reference_line_smoother_;    // 参考线的平滑器
         int last_match_point_index_ = -1; // 上一次匹配点在全局路径的下标
         int match_point_index_ = -1; // 当前匹配点在全局路径的下标

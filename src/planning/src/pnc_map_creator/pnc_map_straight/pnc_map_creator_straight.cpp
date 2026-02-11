@@ -30,7 +30,7 @@ namespace Planning
         map_type_ = static_cast<int>(PNCMapType::STRAIGHT);
         
         // 地图起点坐标
-        p_mid_.x = -3.0;
+        p_mid_.x = -3.0;  // 
         p_mid_.y = pnc_map_config_->pnc_map().road_half_width_ / 2.0;
 
         // 长度步长
@@ -55,7 +55,7 @@ namespace Planning
         pnc_map_markerarray_.markers.emplace_back(pnc_map_.left_boundary);
         pnc_map_markerarray_.markers.emplace_back(pnc_map_.right_boundary);
 
-        RCLCPP_INFO(rclcpp::get_logger("pnc_map"), "pnc_map created,midline points size: %ld ------ ", pnc_map_.midline.points.size());
+        RCLCPP_INFO(rclcpp::get_logger("pnc_map"), "pnc_map已创建,中线点数size: %ld ------ ", pnc_map_.midline.points.size());
         return pnc_map_;
     }
 

@@ -35,12 +35,17 @@ namespace Planning
 {
     PlanningProcess::PlanningProcess() : Node("planning_process") // 规划总流程
     {
-        RCLCPP_INFO(this->get_logger(), "planning_process created");
+        RCLCPP_INFO(this->get_logger(), "planning_process已创建");
 
         // 读取配置文件
         process_config_ = std::make_unique<ConfigReader>();
         process_config_->read_planning_process_config();
         obs_dis_ = process_config_->process().obs_dis_;
+        // 读取参考线类型
+        process_config_->read_reference_line_config();
+        reference_line_type_ = process_config_->refer_line().type_;
+        RCLCPP_INFO(this->get_logger(), "参考线配置 type = %d (%s)",
+                    reference_line_type_, reference_line_type_ == 1 ? "stich(拼接)" : "normal(普通)");
 
         // 创建车辆和障碍物
         car_ = std::make_shared<MainCar>();
@@ -78,18 +83,21 @@ namespace Planning
         local_trajectory_combiner_ = std::make_shared<LocalTrajectoryCombiner>();
         local_trajectory_pnb_ = this->create_publisher<LocalTrajectory>("local_trajectory", 10);
 
+        // 创建绘图信息发布器
+        plot_info_pub_ = this->create_publisher<PlotInfo>("plot_info", 10);
+
     }
 
     bool PlanningProcess::process() // 总流程
     {
         // 阻塞1s，等待rviz和xacro模型先启动
-        rclcpp::Rate rate(1.0);
+        rclcpp::Rate rate(0.5);
         rate.sleep();
         
         // 规划初始化
         if (!planning_init())
         {
-            RCLCPP_ERROR(this->get_logger(), "planning_init failed");
+            RCLCPP_ERROR(this->get_logger(), "planning_init 失败");
             return false;
         }
         
@@ -112,28 +120,28 @@ namespace Planning
         // 连接地图服务器
         if (!connect_server(map_client_))
         {
-            RCLCPP_ERROR(this->get_logger(), "Map server connect failed");
+            RCLCPP_ERROR(this->get_logger(), "地图服务连接失败");
             return false;
         }
 
         // 获取地图
         if (!map_request())
         {
-            RCLCPP_ERROR(this->get_logger(), "Map request and response failed");
+            RCLCPP_ERROR(this->get_logger(), "地图请求和响应失败");
             return false;
         }
 
         // 连接全局路径服务器
         if (!connect_server(global_path_client_))
         {
-            RCLCPP_ERROR(this->get_logger(), "Global path server connect failed");
+            RCLCPP_ERROR(this->get_logger(), "全局路径服务连接失败");
             return false;
         }
 
         // 获取全局路径
         if (!global_path_request())
         {
-            RCLCPP_ERROR(this->get_logger(), "Global path request and response failed");
+            RCLCPP_ERROR(this->get_logger(), "全局路径请求和响应失败");
             return false;
         }
 
@@ -162,6 +170,8 @@ namespace Planning
         tf_broadcaster_->sendTransform(spawn);
     }
 
+    // 函数的职责是利用 ROS2 的 tf2 库，
+    // 从 tf 坐标变换树中查询并获取指定车辆（主车或障碍物）在全局地图坐标系下的最新位置和姿态，然后更新车辆对象自身的内部状态。
     void PlanningProcess::get_location(const std::shared_ptr<VehicleBase> &vehicle) // 获取位置,监听定位点
     {
         try {
@@ -220,11 +230,12 @@ namespace Planning
 
     bool PlanningProcess::map_request() // 发送地图请求
     {
-        RCLCPP_INFO(this->get_logger(),"Sending map request -----------");
+        RCLCPP_INFO(this->get_logger(),"----发送地图请求---");
 
         // 生成请求
         auto request = std::make_shared<PNCMapService::Request>();
         request->map_type = process_config_->pnc_map().type_;
+        RCLCPP_INFO(this->get_logger(), "地图类型请求值: %d (0=直道STRAIGHT, 1=弯道STERN)", request->map_type);
 
         // 获取响应
         auto result_future = map_client_->async_send_request(request);
@@ -233,12 +244,12 @@ namespace Planning
         if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), result_future) == rclcpp::FutureReturnCode::SUCCESS) 
         {
             pnc_map_ = result_future.get()->pnc_map;
-            RCLCPP_INFO(this->get_logger(),"Map request received -----------");
+            RCLCPP_INFO(this->get_logger(),"---地图请求成功---");
             return true;
         }
         else 
         {
-            RCLCPP_ERROR(this->get_logger(),"Map request failed");
+            RCLCPP_ERROR(this->get_logger(),"地图请求失败");
             return false;
         }
         return false;
@@ -246,11 +257,12 @@ namespace Planning
 
     bool PlanningProcess::global_path_request() // 请求全局路径
     {
-        RCLCPP_INFO(this->get_logger(),"Sending global path request");
+        RCLCPP_INFO(this->get_logger(),"发送全局路径请求");
 
         // 生成请求
         auto request = std::make_shared<GlobalPathService::Request>();
         request->global_planner_type = process_config_->global_path().type_;
+        RCLCPP_INFO(this->get_logger(), "全局路径配置 type = %d", request->global_planner_type);
         request->pnc_map = pnc_map_;
 
         // 获取响应
@@ -260,12 +272,12 @@ namespace Planning
         if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), result_future) == rclcpp::FutureReturnCode::SUCCESS) 
         {
             global_path_ = result_future.get()->global_path;
-            RCLCPP_INFO(this->get_logger(),"Global_path response success -----------");
+            RCLCPP_INFO(this->get_logger(),"---全局路径响应成功 ---");
             return true;
         }
         else 
         {
-            RCLCPP_ERROR(this->get_logger(),"Global_path request failed");
+            RCLCPP_ERROR(this->get_logger(),"全局路径响应失败");
             return false;
         }
         return false;
@@ -291,11 +303,22 @@ namespace Planning
         }
 
         // 参考线
-        const auto refer_line = refer_line_creator_->create_reference_line(global_path_, car_->loc_point());
+        base_msgs::msg::Referline refer_line;
+        if (reference_line_type_ == 1) {
+            RCLCPP_INFO(this->get_logger(), "参考线类型: 拼接(stich)");
+            // 拼接模式
+            refer_line = refer_line_creator_->create_reference_line(prev_refer_line_, global_path_, car_->loc_point());
+        } else {
+            RCLCPP_INFO(this->get_logger(), "参考线类型: 普通(normal)");
+            // 普通模式
+            refer_line = refer_line_creator_->create_reference_line(global_path_, car_->loc_point());
+        }
         if (refer_line.refer_line.empty()) {
             RCLCPP_ERROR(this->get_logger(), "参考线为空");
             return;
         }
+        // 保存上一帧参考线
+        prev_refer_line_ = refer_line;
         const auto refer_line_rviz = refer_line_creator_->referline_to_rviz();  // 生成rviz的参考线
         refer_line_pnb_->publish(refer_line_rviz);  // 发布参考线
 
@@ -326,9 +349,21 @@ namespace Planning
 
 
         // 障碍物向路径投影
+        for (const auto &obs : obses_) 
+        {
+            obs->vehicle_cartesian_to_frenet_2path(local_path, refer_line, car_);
+        }
         // 速度决策
+        decider_->make_speed_decision(car_, obses_);
+        
         // 速度规划
-        LocalSpeeds local_speeds;
+        const auto local_speeds = local_speeds_planner_->cal_speed(decider_);
+        if (local_speeds.local_speeds.empty())
+        {
+            RCLCPP_ERROR(this->get_logger(), "局部速度为空");
+            return;
+        }
+
         // 合成轨迹
         const auto local_trajectory = local_trajectory_combiner_->combine_trajectory(local_path, local_speeds);
         if (local_trajectory.local_trajectory.empty()) {
@@ -339,6 +374,27 @@ namespace Planning
         local_trajectory_pnb_->publish(local_trajectory); // 发布轨迹
 
         // 更新绘图信息
+        PlotInfo plot_info;
+        plot_info.header.stamp = this->now();
+        plot_info.header.frame_id = process_config_->pnc_map().frame_;
+        plot_info.trajectory_info = local_trajectory;
+
+        ObsInfo obs_info;
+        for (const auto &obs : obses_)
+        {
+            obs_info.obs_length = obs->length();
+            obs_info.obs_width = obs->width();
+            obs_info.l = obs->l();
+            obs_info.s = obs->s();
+            obs_info.s_2path = obs->s_2path();
+            obs_info.ds_dt_2path = obs->ds_dt_2path();
+            obs_info.t_in = obs->t_in();
+            obs_info.t_out = obs->t_out();
+            plot_info.obs_info.emplace_back(obs_info);
+        }
+
+        plot_info_pub_->publish(plot_info);
+
         // 更新车辆信息
         
         car_->update_cartesian_info(local_trajectory.local_trajectory[0]);
@@ -352,12 +408,12 @@ namespace Planning
 
         const auto end_time = this->get_clock()->now();
         const double planner_total_time = end_time.seconds() - start_time.seconds();
-        RCLCPP_INFO(this->get_logger(), "-----规划总时间: %f ms\n", planner_total_time * 1000);
+        RCLCPP_INFO(this->get_logger(), "规划总时间: %f ms\n", planner_total_time * 1000);
 
         // 防止系统卡死
         if(planner_total_time > 1.0)
         {
-            RCLCPP_ERROR(this->get_logger(), "-----规划总时间超过1秒，系统卡死");
+            RCLCPP_ERROR(this->get_logger(), "规划总时间超过1秒，系统卡死");
             rclcpp::shutdown();
         }
     }

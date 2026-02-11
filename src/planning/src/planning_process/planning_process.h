@@ -6,6 +6,9 @@
 #include "base_msgs/srv/global_path_service.hpp"
 #include "base_msgs/srv/pnc_map_service.hpp"
 #include "base_msgs/msg/local_trajectory.hpp"
+#include "base_msgs/msg/obs_info.hpp"
+#include "base_msgs/msg/plot_info.hpp"
+#include "base_msgs/msg/referline.hpp"
 #include "nav_msgs/msg/path.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "tf2_ros/static_transform_broadcaster.h"
@@ -23,10 +26,13 @@
 #include "local_trajectory_combiner.h"
 #include "vehicle_info_base.h"
 
+#include <base_msgs/msg/detail/obs_info__struct.hpp>
+#include <base_msgs/msg/detail/plot_info__struct.hpp>
 #include <memory>
 #include <rclcpp/publisher.hpp>
 #include <rclcpp/timer.hpp>
 #include <tf2_ros/static_transform_broadcaster.hpp>
+
 #include <vector>
 #include <cmath>
 #include <algorithm>
@@ -35,6 +41,8 @@ namespace Planning
 {
     using namespace std::chrono_literals;
     using base_msgs::msg::LocalTrajectory;  // 轨迹
+    using base_msgs::msg::ObsInfo;
+    using base_msgs::msg::PlotInfo;
     using base_msgs::msg::PNCMap;  // pnc地图
     using base_msgs::srv::GlobalPathService;  // 全局路径服务
     using base_msgs::srv::PNCMapService;  // 地图服务
@@ -97,7 +105,13 @@ namespace Planning
         std::shared_ptr<LocalTrajectoryCombiner> local_trajectory_combiner_;  // 轨迹合成器
         rclcpp::Publisher<LocalTrajectory>::SharedPtr local_trajectory_pnb_;  // 轨迹发布器
 
+        rclcpp::Publisher<PlotInfo>::SharedPtr plot_info_pub_;  // 绘图信息发布器
+        
         rclcpp::TimerBase::SharedPtr timer_;  // 定时器事件
+
+        // 参考线切换与拼接
+        int reference_line_type_ = 0; // 0: normal, 1: stitch
+        base_msgs::msg::Referline prev_refer_line_;
 
     };
 } // namespace Planning

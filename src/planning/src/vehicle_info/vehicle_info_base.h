@@ -33,13 +33,25 @@ namespace Planning
             theta_ = point.path_point.theta;
             kappa_ = point.path_point.kappa;
             dkappa_ = point.path_point.dkappa;
-            // speed_ = point.speed_point.speed;
-            // acceleration_ = point.speed_point.acceleration;
-            // dacceleration_ = point.speed_point.dacceleration;
+            speed_ = point.speed_point.speed;
+            acceleration_ = point.speed_point.acceleration;
+            dacceleration_ = point.speed_point.dacceleration;
+
+        }
+
+        inline void update_t0() { t0_ -= 1.0; }
+        inline void update_t_in_out(const double &t, const double &t_in, const double &t_out)
+        {
+            t_ = t;
+            t_in_ = t_in;
+            t_out_ = t_out;
         }
         
         // 定位点转frenet
-        virtual void vehicle_cartesian_to_frenet(const Referline &refer_line) = 0;
+        virtual void vehicle_cartesian_to_frenet(const Referline &refer_line) = 0; // 定位点在参考线上的投影点参数
+        virtual void vehicle_cartesian_to_frenet_2path(const LocalPath &local_path,
+                                                       const Referline &refer_line,
+                                                       const std::shared_ptr<VehicleBase> &car) = 0; // 定位点在局部路径上的投影点参数
 
         // 基本属性
         inline std::string child_frame() const { return child_frame_; }
@@ -67,9 +79,20 @@ namespace Planning
         inline double ddl_dt() const { return ddl_dt_; }
 
         // 向路径投影的frenet参数
+        inline double s_2path() const { return s_2path_; }
+        inline double l2path() const { return l_2path_; }
+        inline double ds_dt_2path() const { return ds_dt_2path_; }
+        inline double dl_ds_2path() const { return dl_ds_2path_; }
+        inline double dl_dt_2path() const { return dl_dt_2path_; }
+        inline double dds_dt_2path() const { return dds_dt_2path_; }
+        inline double ddl_ds_2path() const { return ddl_ds_2path_; }
+        inline double ddl_dt_2path() const { return ddl_dt_2path_; }
 
         // 时间参数
-
+        inline double t0() const { return t0_; }
+        inline double t() const { return t_; }
+        inline double t_in() const { return t_in_; }
+        inline double t_out() const { return t_out_; }
     
         // 虚析构
         virtual ~VehicleBase(){}
@@ -91,18 +114,31 @@ namespace Planning
         double acceleration_ = 0.0; // 加速度
         double dacceleration_ = 0.0; // 加速度变化率
 
-    // 向参考线投影的frenet参数
-    double s_ = 0.0;
-    double l_ = 0.0;
-    double ds_dt_ = 0.0;
-    double dl_ds_ = 0.0;
-    double dl_dt_ = 0.0;
-    double dds_dt_ = 0.0;
-    double ddl_ds_ = 0.0;
-    double ddl_dt_ = 0.0;
+        // 向参考线投影的frenet参数
+        double s_ = 0.0;
+        double l_ = 0.0;
+        double ds_dt_ = 0.0;
+        double dl_ds_ = 0.0;
+        double dl_dt_ = 0.0;
+        double dds_dt_ = 0.0;
+        double ddl_ds_ = 0.0;
+        double ddl_dt_ = 0.0; 
 
-    // 向路径投影的frenet参数
-    // 时间参数
+        // 向路径投影的frenet参数
+        double s_2path_ = 0.0;
+        double l_2path_ = 0.0;
+        double ds_dt_2path_ = 0.0;
+        double dl_ds_2path_ = 0.0;
+        double dl_dt_2path_ = 0.0;
+        double dds_dt_2path_ = 0.0;
+        double ddl_ds_2path_ = 0.0;
+        double ddl_dt_2path_ = 0.0;
+
+        // 时间参数
+        double t0_ = 0.0; // 起始时间
+        double t_ = 0.0; // 当前时间
+        double t_in_ = 0.0; // 障碍物进入路径时间
+        double t_out_ = 0.0; // 障碍物退出路径时间
 
     };
 } // namespace Planning

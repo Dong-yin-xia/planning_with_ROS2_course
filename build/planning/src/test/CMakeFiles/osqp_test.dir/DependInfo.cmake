@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/x/planning_with_ROS2_course/src/planning/src/test/osqp_test/osqp_test.cpp" "src/test/CMakeFiles/osqp_test.dir/osqp_test/osqp_test.cpp.o" "gcc" "src/test/CMakeFiles/osqp_test.dir/osqp_test/osqp_test.cpp.o.d"
+  "/home/x/xiugai/planning_with_ROS2_course/src/planning/src/test/osqp_test/osqp_test.cpp" "src/test/CMakeFiles/osqp_test.dir/osqp_test/osqp_test.cpp.o" "gcc" "src/test/CMakeFiles/osqp_test.dir/osqp_test/osqp_test.cpp.o.d"
   )
 
 # Targets to which this target links.

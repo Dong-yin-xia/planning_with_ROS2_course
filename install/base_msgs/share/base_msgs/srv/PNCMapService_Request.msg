@@ -1,3 +1,1 @@
-# 地图服务
-
-int32 map_type  # 请求: 地图类型
+/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_cmake/srv/PNCMapService_Request.msg

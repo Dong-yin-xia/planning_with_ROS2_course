@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/planning_with_ROS2_course/src/planning
+CMAKE_SOURCE_DIR = /home/x/xiugai/planning_with_ROS2_course/src/planning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/planning_with_ROS2_course/build/planning
+CMAKE_BINARY_DIR = /home/x/xiugai/planning_with_ROS2_course/build/planning
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/planning_with_ROS2_course/src/planning /home/x/planning_with_ROS2_course/src/planning /home/x/planning_with_ROS2_course/build/planning /home/x/planning_with_ROS2_course/build/planning /home/x/planning_with_ROS2_course/build/planning/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/xiugai/planning_with_ROS2_course/src/planning /home/x/xiugai/planning_with_ROS2_course/src/planning /home/x/xiugai/planning_with_ROS2_course/build/planning /home/x/xiugai/planning_with_ROS2_course/build/planning /home/x/xiugai/planning_with_ROS2_course/build/planning/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

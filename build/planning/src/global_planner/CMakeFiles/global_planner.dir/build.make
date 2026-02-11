@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/planning_with_ROS2_course/src/planning
+CMAKE_SOURCE_DIR = /home/x/xiugai/planning_with_ROS2_course/src/planning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/planning_with_ROS2_course/build/planning
+CMAKE_BINARY_DIR = /home/x/xiugai/planning_with_ROS2_course/build/planning
 
 # Include any dependencies generated for this target.
 include src/global_planner/CMakeFiles/global_planner.dir/depend.make
@@ -70,34 +70,50 @@ include src/global_planner/CMakeFiles/global_planner.dir/progress.make
 include src/global_planner/CMakeFiles/global_planner.dir/flags.make
 
 src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o: src/global_planner/CMakeFiles/global_planner.dir/flags.make
-src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o: /home/x/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp
+src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o: /home/x/xiugai/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp
 src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o: src/global_planner/CMakeFiles/global_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/planning_with_ROS2_course/build/planning/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o"
-	cd /home/x/planning_with_ROS2_course/build/planning/src/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o -MF CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o.d -o CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o -c /home/x/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/xiugai/planning_with_ROS2_course/build/planning/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o"
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o -MF CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o.d -o CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o -c /home/x/xiugai/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp
 
 src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.i"
-	cd /home/x/planning_with_ROS2_course/build/planning/src/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp > CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.i
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/xiugai/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp > CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.i
 
 src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.s"
-	cd /home/x/planning_with_ROS2_course/build/planning/src/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp -o CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.s
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/xiugai/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp -o CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.s
+
+src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o: src/global_planner/CMakeFiles/global_planner.dir/flags.make
+src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o: /home/x/xiugai/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_astar/global_planner_astar.cpp
+src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o: src/global_planner/CMakeFiles/global_planner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/xiugai/planning_with_ROS2_course/build/planning/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o"
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o -MF CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o.d -o CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o -c /home/x/xiugai/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_astar/global_planner_astar.cpp
+
+src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.i"
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/xiugai/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_astar/global_planner_astar.cpp > CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.i
+
+src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.s"
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/xiugai/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_astar/global_planner_astar.cpp -o CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.s
 
 # Object files for target global_planner
 global_planner_OBJECTS = \
-"CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o"
+"CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o" \
+"CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o"
 
 # External object files for target global_planner
 global_planner_EXTERNAL_OBJECTS =
 
 src/global_planner/libglobal_planner.so: src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o
+src/global_planner/libglobal_planner.so: src/global_planner/CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o
 src/global_planner/libglobal_planner.so: src/global_planner/CMakeFiles/global_planner.dir/build.make
-src/global_planner/libglobal_planner.so: /home/x/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_fastrtps_c.so
-src/global_planner/libglobal_planner.so: /home/x/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_introspection_c.so
-src/global_planner/libglobal_planner.so: /home/x/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_fastrtps_cpp.so
-src/global_planner/libglobal_planner.so: /home/x/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_introspection_cpp.so
-src/global_planner/libglobal_planner.so: /home/x/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_cpp.so
-src/global_planner/libglobal_planner.so: /home/x/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_generator_py.so
+src/global_planner/libglobal_planner.so: /home/x/xiugai/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_fastrtps_c.so
+src/global_planner/libglobal_planner.so: /home/x/xiugai/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_introspection_c.so
+src/global_planner/libglobal_planner.so: /home/x/xiugai/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_fastrtps_cpp.so
+src/global_planner/libglobal_planner.so: /home/x/xiugai/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_introspection_cpp.so
+src/global_planner/libglobal_planner.so: /home/x/xiugai/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_cpp.so
+src/global_planner/libglobal_planner.so: /home/x/xiugai/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_generator_py.so
 src/global_planner/libglobal_planner.so: src/common/libconfig_reader.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_c.so
@@ -126,10 +142,10 @@ src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libgeometry_msgs__r
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libvisualization_msgs__rosidl_generator_py.so
-src/global_planner/libglobal_planner.so: /home/x/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_c.so
+src/global_planner/libglobal_planner.so: /home/x/xiugai/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_c.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_c.so
-src/global_planner/libglobal_planner.so: /home/x/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_generator_c.so
+src/global_planner/libglobal_planner.so: /home/x/xiugai/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_generator_c.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libvisualization_msgs__rosidl_generator_c.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
@@ -197,18 +213,18 @@ src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libtracetools.so
 src/global_planner/libglobal_planner.so: /opt/ros/humble/lib/libament_index_cpp.so
 src/global_planner/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
 src/global_planner/libglobal_planner.so: src/global_planner/CMakeFiles/global_planner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/x/planning_with_ROS2_course/build/planning/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libglobal_planner.so"
-	cd /home/x/planning_with_ROS2_course/build/planning/src/global_planner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/global_planner.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/x/xiugai/planning_with_ROS2_course/build/planning/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libglobal_planner.so"
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/global_planner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/global_planner/CMakeFiles/global_planner.dir/build: src/global_planner/libglobal_planner.so
 .PHONY : src/global_planner/CMakeFiles/global_planner.dir/build
 
 src/global_planner/CMakeFiles/global_planner.dir/clean:
-	cd /home/x/planning_with_ROS2_course/build/planning/src/global_planner && $(CMAKE_COMMAND) -P CMakeFiles/global_planner.dir/cmake_clean.cmake
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner && $(CMAKE_COMMAND) -P CMakeFiles/global_planner.dir/cmake_clean.cmake
 .PHONY : src/global_planner/CMakeFiles/global_planner.dir/clean
 
 src/global_planner/CMakeFiles/global_planner.dir/depend:
-	cd /home/x/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/planning_with_ROS2_course/src/planning /home/x/planning_with_ROS2_course/src/planning/src/global_planner /home/x/planning_with_ROS2_course/build/planning /home/x/planning_with_ROS2_course/build/planning/src/global_planner /home/x/planning_with_ROS2_course/build/planning/src/global_planner/CMakeFiles/global_planner.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/xiugai/planning_with_ROS2_course/build/planning && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/xiugai/planning_with_ROS2_course/src/planning /home/x/xiugai/planning_with_ROS2_course/src/planning/src/global_planner /home/x/xiugai/planning_with_ROS2_course/build/planning /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner /home/x/xiugai/planning_with_ROS2_course/build/planning/src/global_planner/CMakeFiles/global_planner.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/global_planner/CMakeFiles/global_planner.dir/depend
 

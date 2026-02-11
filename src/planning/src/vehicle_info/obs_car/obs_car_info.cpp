@@ -71,4 +71,47 @@ namespace Planning
     
     }
 
+    // 向路径投影
+    void ObsCar::vehicle_cartesian_to_frenet_2path(const LocalPath &local_path,
+                                                    const Referline &refer_line,
+                                                    const std::shared_ptr<VehicleBase> &car)
+    {
+        // 计算路径起点终点在参考线上的下标
+        const double path0_index = Curve::find_match_point(refer_line, local_path.local_path[0].pose);
+        const double path_end_index = Curve::find_match_point(refer_line, local_path.local_path.back().pose);
+
+        // 当障碍物在参考线上的S值超出路径首尾范围时
+        if (s_ > refer_line.refer_line[path_end_index].rs || s_ < refer_line.refer_line[path0_index].rs) // 超出路径前段或后段
+        {
+            // 直接用参考线投影的值近似替代路径投影
+            s_2path_ = s_ - refer_line.refer_line[path0_index].rs;
+            ds_dt_2path_ = ds_dt_;
+            l_2path_ = l_ - car->l();
+            dl_ds_2path_ = dl_ds_;
+            dl_dt_2path_ = dl_dt_;
+            dds_dt_2path_ = dds_dt_;
+            ddl_ds_2path_ = ddl_ds_;
+            ddl_dt_2path_ = ddl_dt_;
+            
+            RCLCPP_INFO(rclcpp::get_logger("vehicle"), "障碍物汽车笛卡尔转frenet到路径投影：path0_rs = %.2f, path_end_rs = %.2f, s2path = %.2f, ds_dt_2path = %.2f, l2path = %.2f, dl_ds_2path = %.2f, dl_dt_2path = %.2f", 
+                                                  refer_line.refer_line[path0_index].rs, refer_line.refer_line[path_end_index].rs, s_2path_, ds_dt_2path_, l_2path_, dl_ds_2path_, dl_dt_2path_);
+            return;
+        }
+
+        double rs, rx, ry, rtheta, rkappa, rdkappa;
+
+        // 计算定位点在路径上的投影点参数
+        Curve::find_projection_point(local_path, loc_point_, rs, rx, ry, rtheta, rkappa, rdkappa);
+        RCLCPP_INFO(rclcpp::get_logger("vehicle"), "障碍物汽车笛卡尔转frenet到路径投影：rs = %.2f, rx = %.2f, ry = %.2f, rtheta = %.2f, rkappa = %.2f, rdkappa = %.2f", rs, rx, ry, rtheta, rkappa, rdkappa);
+
+        // 计算定位点在frenet坐标下的参数
+        Curve::cartesian_to_frenet(loc_point_.pose.position.x, loc_point_.pose.position.y,
+                                   theta_, speed_, acceleration_, kappa_, 
+                                   rs, rx, ry, rtheta, rkappa, rdkappa, 
+                                   s_2path_, ds_dt_2path_, dds_dt_2path_, l_2path_, dl_ds_2path_, dl_dt_2path_, ddl_ds_2path_, ddl_dt_2path_);
+        RCLCPP_INFO(rclcpp::get_logger("vehicle"), "障碍物汽车笛卡尔转frenet到路径投影：s2path = %.2f, ds_dt_2path = %.2f,l2path = %.2f, dl_ds_2path = %.2f, dl_dt_2path = %.2f", 
+                                                  s_2path_, ds_dt_2path_, l_2path_, dl_ds_2path_, dl_dt_2path_);
+        return;
+    }
+
 } // namespace Planning

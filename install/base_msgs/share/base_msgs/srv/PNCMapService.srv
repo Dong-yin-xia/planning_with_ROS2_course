@@ -1,5 +1,1 @@
-# 地图服务
-
-int32 map_type  # 请求: 地图类型
----
-PNCMap pnc_map  # 响应: 地图
+/home/x/xiugai/planning_with_ROS2_course/src/base_msgs/srv/PNCMapService.srv

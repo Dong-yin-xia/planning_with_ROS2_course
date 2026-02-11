@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/planning_with_ROS2_course/src/base_msgs
+CMAKE_SOURCE_DIR = /home/x/xiugai/planning_with_ROS2_course/src/base_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/planning_with_ROS2_course/build/base_msgs
+CMAKE_BINARY_DIR = /home/x/xiugai/planning_with_ROS2_course/build/base_msgs
 
 # Utility rule file for base_msgs__cpp.
 
@@ -276,8 +276,8 @@ rosidl_generator_cpp/base_msgs/srv/global_path_service.hpp: /opt/ros/humble/shar
 rosidl_generator_cpp/base_msgs/srv/global_path_service.hpp: /opt/ros/humble/share/nav_msgs/srv/GetPlan.idl
 rosidl_generator_cpp/base_msgs/srv/global_path_service.hpp: /opt/ros/humble/share/nav_msgs/srv/LoadMap.idl
 rosidl_generator_cpp/base_msgs/srv/global_path_service.hpp: /opt/ros/humble/share/nav_msgs/srv/SetMap.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/x/planning_with_ROS2_course/build/base_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/x/planning_with_ROS2_course/build/base_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/base_msgs/srv/detail/global_path_service__builder.hpp: rosidl_generator_cpp/base_msgs/srv/global_path_service.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/base_msgs/srv/detail/global_path_service__builder.hpp
@@ -549,6 +549,6 @@ CMakeFiles/base_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/base_msgs__cpp.dir/clean
 
 CMakeFiles/base_msgs__cpp.dir/depend:
-	cd /home/x/planning_with_ROS2_course/build/base_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/planning_with_ROS2_course/src/base_msgs /home/x/planning_with_ROS2_course/src/base_msgs /home/x/planning_with_ROS2_course/build/base_msgs /home/x/planning_with_ROS2_course/build/base_msgs /home/x/planning_with_ROS2_course/build/base_msgs/CMakeFiles/base_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/xiugai/planning_with_ROS2_course/build/base_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/xiugai/planning_with_ROS2_course/src/base_msgs /home/x/xiugai/planning_with_ROS2_course/src/base_msgs /home/x/xiugai/planning_with_ROS2_course/build/base_msgs /home/x/xiugai/planning_with_ROS2_course/build/base_msgs /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/CMakeFiles/base_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/base_msgs__cpp.dir/depend
 

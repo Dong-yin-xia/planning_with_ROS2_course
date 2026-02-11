@@ -41,17 +41,20 @@ namespace Planning
     void PNCMapServer::response_pnc_map_callback(const std::shared_ptr<PNCMapService::Request> request, 
                                                  const std::shared_ptr<PNCMapService::Response> response)
     {
+        RCLCPP_INFO(this->get_logger(), "收到地图请求: map_type=%d (0=直道STRAIGHT, 1=弯道STERN)", request->map_type);
         // 接受请求，多态
         switch (request->map_type)
         {
             case static_cast<int>(PNCMapType::STRAIGHT): // 直线路径
+                RCLCPP_INFO(this->get_logger(), "创建直道地图 (PNCMapCreatorStraight)");
                 map_creator_ = std::make_shared<PNCMapCreatorStraight>();
                 break;
             case static_cast<int>(PNCMapType::STERN): // 转角路径
+                RCLCPP_INFO(this->get_logger(), "创建弯道地图 (PNCMapCreatorSTurn)");
                 map_creator_ = std::make_shared<PNCMapCreatorSTurn>();
                 break;
             default:
-                RCLCPP_WARN(this->get_logger(), "Invalid map type!");
+                RCLCPP_WARN(this->get_logger(), "Invalid map type: %d!", request->map_type);
                 return;
         }
         // 创建并响应地图

@@ -1,4 +1,1 @@
-# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
-
-set(base_msgs_IDL_FILES "srv/GlobalPathService.idl;srv/PNCMapService.idl;msg/PNCMap.idl;msg/ReferlinePoint.idl;msg/Referline.idl;msg/LocalPathPoint.idl;msg/LocalPath.idl;msg/LocalSpeedsPoint.idl;msg/LocalSpeeds.idl;msg/LocalTrajectoryPoint.idl;msg/LocalTrajectory.idl;msg/ObsInfo.idl;msg/PlotInfo.idl")
-set(base_msgs_INTERFACE_FILES "srv/GlobalPathService.srv;srv/GlobalPathService_Request.msg;srv/GlobalPathService_Response.msg;srv/PNCMapService.srv;srv/PNCMapService_Request.msg;srv/PNCMapService_Response.msg;msg/PNCMap.msg;msg/ReferlinePoint.msg;msg/Referline.msg;msg/LocalPathPoint.msg;msg/LocalPath.msg;msg/LocalSpeedsPoint.msg;msg/LocalSpeeds.msg;msg/LocalTrajectoryPoint.msg;msg/LocalTrajectory.msg;msg/ObsInfo.msg;msg/PlotInfo.msg")
+/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

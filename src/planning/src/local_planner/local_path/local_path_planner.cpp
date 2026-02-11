@@ -66,10 +66,12 @@ namespace Planning
             point_tmp.ddl_ds = 0.0;
 
             // 计算point_tmp的l和dl_ds
+            // 横向 L 值计算 (基于决策中心)
             const int sl_points_size = decision->sl_points().size();
             for (int j = 0; j < sl_points_size - 1; j++) 
             {
               // 确定每个分段起始状态和末状态
+              // 决策中心传入计算的s和l
               const double start_s = decision->sl_points()[j].s_;
               const double start_l = decision->sl_points()[j].l_;
               const double start_dl_ds = 0.0;

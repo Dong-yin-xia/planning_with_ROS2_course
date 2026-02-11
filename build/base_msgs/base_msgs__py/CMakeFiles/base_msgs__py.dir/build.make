@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/planning_with_ROS2_course/src/base_msgs
+CMAKE_SOURCE_DIR = /home/x/xiugai/planning_with_ROS2_course/src/base_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/planning_with_ROS2_course/build/base_msgs
+CMAKE_BINARY_DIR = /home/x/xiugai/planning_with_ROS2_course/build/base_msgs
 
 # Utility rule file for base_msgs__py.
 
@@ -239,8 +239,8 @@ rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /
 rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/nav_msgs/srv/GetPlan.idl
 rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/nav_msgs/srv/LoadMap.idl
 rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/nav_msgs/srv/SetMap.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/x/planning_with_ROS2_course/build/base_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/x/planning_with_ROS2_course/build/base_msgs/base_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/x/planning_with_ROS2_course/build/base_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/base_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -372,10 +372,10 @@ base_msgs__py/CMakeFiles/base_msgs__py.dir/build: base_msgs__py
 .PHONY : base_msgs__py/CMakeFiles/base_msgs__py.dir/build
 
 base_msgs__py/CMakeFiles/base_msgs__py.dir/clean:
-	cd /home/x/planning_with_ROS2_course/build/base_msgs/base_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/base_msgs__py.dir/cmake_clean.cmake
+	cd /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/base_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/base_msgs__py.dir/cmake_clean.cmake
 .PHONY : base_msgs__py/CMakeFiles/base_msgs__py.dir/clean
 
 base_msgs__py/CMakeFiles/base_msgs__py.dir/depend:
-	cd /home/x/planning_with_ROS2_course/build/base_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/planning_with_ROS2_course/src/base_msgs /home/x/planning_with_ROS2_course/build/base_msgs/base_msgs__py /home/x/planning_with_ROS2_course/build/base_msgs /home/x/planning_with_ROS2_course/build/base_msgs/base_msgs__py /home/x/planning_with_ROS2_course/build/base_msgs/base_msgs__py/CMakeFiles/base_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/xiugai/planning_with_ROS2_course/build/base_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/xiugai/planning_with_ROS2_course/src/base_msgs /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/base_msgs__py /home/x/xiugai/planning_with_ROS2_course/build/base_msgs /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/base_msgs__py /home/x/xiugai/planning_with_ROS2_course/build/base_msgs/base_msgs__py/CMakeFiles/base_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : base_msgs__py/CMakeFiles/base_msgs__py.dir/depend
 

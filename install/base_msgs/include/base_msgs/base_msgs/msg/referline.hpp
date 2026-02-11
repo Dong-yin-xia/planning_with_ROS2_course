@@ -1,12 +1,1 @@
-// generated from rosidl_generator_cpp/resource/idl.hpp.em
-// generated code does not contain a copyright notice
-
-#ifndef BASE_MSGS__MSG__REFERLINE_HPP_
-#define BASE_MSGS__MSG__REFERLINE_HPP_
-
-#include "base_msgs/msg/detail/referline__struct.hpp"
-#include "base_msgs/msg/detail/referline__builder.hpp"
-#include "base_msgs/msg/detail/referline__traits.hpp"
-#include "base_msgs/msg/detail/referline__type_support.hpp"
-
-#endif  // BASE_MSGS__MSG__REFERLINE_HPP_
+/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_generator_cpp/base_msgs/msg/referline.hpp

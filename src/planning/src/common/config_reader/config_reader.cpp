@@ -24,7 +24,8 @@ namespace Planning
         std::string planning_share_directory = ament_index_cpp::get_package_share_directory("planning");
 
         // 然后获取配置文件
-        planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_static_obs_config.yaml");
+        // planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_static_obs_config.yaml");
+        planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_dynamic_obs_config.yaml");
     }
 
     /************vehicle*************/
@@ -72,6 +73,8 @@ namespace Planning
             pnc_map_.road_half_width_ = planning_config["pnc_map"]["road_half_width"].as<double>();
             pnc_map_.segment_len_ = planning_config["pnc_map"]["segment_len"].as<double>();
             pnc_map_.speed_limit_ = planning_config["pnc_map"]["speed_limit"].as<double>();
+            RCLCPP_INFO(rclcpp::get_logger("config"), "读取PNC地图配置: type=%d (0=直道, 1=弯道), road_length=%.2f", 
+                        pnc_map_.type_, pnc_map_.road_length_);
         }
         catch (const YAML::Exception &e)
         {
@@ -129,7 +132,7 @@ namespace Planning
     {
         try
         {
-            read_pnc_map_config();
+            read_vehicles_config();
             local_speeds_.speed_size_ = planning_config["local_speed"]["speed_size"].as<int>();
         }
         catch (const YAML::Exception &e)

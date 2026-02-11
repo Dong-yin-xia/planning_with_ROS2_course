@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/planning_with_ROS2_course/src/planning
+CMAKE_SOURCE_DIR = /home/x/xiugai/planning_with_ROS2_course/src/planning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/planning_with_ROS2_course/build/planning
+CMAKE_BINARY_DIR = /home/x/xiugai/planning_with_ROS2_course/build/planning
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/planning_with_ROS2_course/build/planning/CMakeFiles /home/x/planning_with_ROS2_course/build/planning//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/xiugai/planning_with_ROS2_course/build/planning/CMakeFiles /home/x/xiugai/planning_with_ROS2_course/build/planning//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/planning_with_ROS2_course/build/planning/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/xiugai/planning_with_ROS2_course/build/planning/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o"
+  "CMakeFiles/global_planner.dir/global_planner_astar/global_planner_astar.cpp.o.d"
   "CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o"
   "CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o.d"
   "libglobal_planner.pdb"

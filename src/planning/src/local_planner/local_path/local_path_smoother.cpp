@@ -18,7 +18,7 @@ Copyright © 2024 C哥智驾说 All rights reserved.
 
 namespace Planning
 {
-    LocalPathSmoother::LocalPathSmoother() // 局部路径平滑器
+    LocalPathSmoother::LocalPathSmoother() // 局部路径平滑器 117
     {
         RCLCPP_INFO(rclcpp::get_logger("local_path"), "局部路径平滑器已创建");
 

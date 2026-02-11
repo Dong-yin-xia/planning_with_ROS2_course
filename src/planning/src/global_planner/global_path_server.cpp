@@ -49,19 +49,25 @@ namespace Planning
                                                          const std::shared_ptr<GlobalPathService::Response> response)
     {
         // 接受请求，多态
+        RCLCPP_INFO(this->get_logger(), "收到请求的全局路径类型: %d", request->global_planner_type);
         switch (request->global_planner_type)
         {
             case static_cast<int>(GlobalPlannerType::NORMAL): // 普通全局路径规划器
                 global_planner_base_ = std::make_shared<GlobalPlannerNormal>();
+                RCLCPP_INFO(this->get_logger(), "使用 Normal 全局路径规划器");
+                break;
+            case static_cast<int>(GlobalPlannerType::ASTAR): // A星全局路径规划器
+                global_planner_base_ = std::make_shared<GlobalPlannerAStar>();
+                RCLCPP_INFO(this->get_logger(), "使用 A* 全局路径规划器");
                 break;
             default:
-                RCLCPP_ERROR(this->get_logger(), "Invalid global planner type!");
+                RCLCPP_ERROR(this->get_logger(), "无效的全局路径类型!");
                 return;
         }
         // 判断请求是否为空
         if (request->pnc_map.midline.points.empty())
         {
-            RCLCPP_ERROR(this->get_logger(), "pnc_map is empty, global path cannot be generated");
+            RCLCPP_ERROR(this->get_logger(), "PNC地图为空，无法生成全局路径");
             return;
         }
         // 创建并响应全局路径
@@ -71,12 +77,12 @@ namespace Planning
         // 发布全局路径，Planning node使用
         // 因为只发布1次，并且path没有frame_locked，所以无法固定在rviz中
         global_path_pnb_->publish(global_path);
-        RCLCPP_INFO(this->get_logger(), "global_path published");
+        RCLCPP_INFO(this->get_logger(), "全局路径发布成功");
 
         // 发布全局路径markerarray，rviz使用
         const auto global_path_rviz = path2marker(global_path);
         global_path_rviz_pnb_->publish(global_path_rviz);
-        RCLCPP_INFO(this->get_logger(), "global_path for rviz published");
+        RCLCPP_INFO(this->get_logger(), "RVIz全局路径发布成功");
     }
 
     Marker GlobalPathServer::path2marker(const Path &path)
