@@ -1,1 +1,12 @@
-/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_generator_cpp/base_msgs/msg/local_speeds.hpp
+// generated from rosidl_generator_cpp/resource/idl.hpp.em
+// generated code does not contain a copyright notice
+
+#ifndef BASE_MSGS__MSG__LOCAL_SPEEDS_HPP_
+#define BASE_MSGS__MSG__LOCAL_SPEEDS_HPP_
+
+#include "base_msgs/msg/detail/local_speeds__struct.hpp"
+#include "base_msgs/msg/detail/local_speeds__builder.hpp"
+#include "base_msgs/msg/detail/local_speeds__traits.hpp"
+#include "base_msgs/msg/detail/local_speeds__type_support.hpp"
+
+#endif  // BASE_MSGS__MSG__LOCAL_SPEEDS_HPP_

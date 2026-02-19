@@ -139,12 +139,14 @@ namespace Planning
         const double ori_dis_time = static_cast<double>(decision_config_->local_speeds().speed_size_ -50);// 开始考虑障碍物的时间，50帧
         const double ori_dis = ori_dis_time * decision_config_->main_car().speed_ori_;// 开始考虑障碍物的距离，50米
         const double real_brake_time = (ori_dis_time + static_cast<double>(decision_config_->local_speeds().speed_size_)) / 2.0; // 50 +100 /2 = 75帧
+        
         STPoint p;
 
         // 针对每个障碍物计算变速点位
         for (const auto &obs : obses) 
         {
             const double obs_dis_s = obs->s_2path() + car->speed(); // 主车与障碍物的距离（沿路径）
+            const double follow_safe_dis = obs->ds_dt_2path() * 50.0; // 跟车安全距离
             if (obs_dis_s > ori_dis || // 如果车辆还没有进入考虑范围
                 obs_dis_s < -decision_config_->decision().safe_dis_s_) // 或者车辆在障碍物前方
             {
@@ -172,7 +174,7 @@ namespace Planning
                                                                         obs_dis_s, p.t0_, p.s0_, t_in, t_out);
                     // 计算st点
                     p.t_ = p.t0_ + real_brake_time;
-                    p.s_2path_ = obs_dis_s - decision_config_->decision().safe_dis_s_ + obs->ds_dt_2path() * p.t_;
+                    p.s_2path_ = obs_dis_s - follow_safe_dis + obs->ds_dt_2path() * p.t_;
                     p.ds_dt_2path_ = obs->ds_dt_2path();
                     p.type_ = static_cast<int>(STPointType::STOP);
                     st_points_.emplace_back(p);
@@ -210,7 +212,7 @@ namespace Planning
 
                  // 计算切入 切出时间
                  const double delta_t = decision_config_->decision().safe_dis_s_ / decision_config_->main_car().speed_ori_; // 安全时间阈值
-                 const double half_through_time = (-obs->length() / 2.0) / obs->dl_dt_2path(); // 半个车身穿过路径的时间
+                 const double half_through_time = fabs(obs->length() / 2.0 / obs->dl_dt_2path()); // 半个车身穿过路径的时间
                  t_in = obs_dis_time - half_through_time;
                  t_out = obs_dis_time + half_through_time;
                  RCLCPP_INFO(rclcpp::get_logger("decision_center"), "----obs_dis_s = %.2f, p.t0 = %.2f, p.s0 = %.2f, car_dis_time = %.2f, obs_dis_time = %.2f, t_in = %.2f, t_out = %.2f, delta_t = %.2f",

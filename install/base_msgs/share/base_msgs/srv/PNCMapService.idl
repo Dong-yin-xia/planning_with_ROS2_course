@@ -1,1 +1,22 @@
-/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_adapter/base_msgs/srv/PNCMapService.idl
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from base_msgs/srv/PNCMapService.srv
+// generated code does not contain a copyright notice
+
+#include "base_msgs/msg/PNCMap.idl"
+
+module base_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "地图服务")
+    struct PNCMapService_Request {
+      @verbatim (language="comment", text=
+        "请求: 地图类型")
+      int32 map_type;
+    };
+    struct PNCMapService_Response {
+      @verbatim (language="comment", text=
+        "响应: 地图")
+      base_msgs::msg::PNCMap pnc_map;
+    };
+  };
+};

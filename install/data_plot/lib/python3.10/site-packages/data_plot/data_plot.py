@@ -123,8 +123,8 @@ class PlotData(Node):
             # 计算障碍物上下左右边界
             s_left = obs.s - obs.obs_length / 2.0
             s_right = obs.s + obs.obs_length / 2.0
-            l_bottom = obs.s - obs.obs_width / 2.0
-            l_up = obs.s + obs.obs_width / 2.0
+            l_bottom = obs.l - obs.obs_width / 2.0
+            l_up = obs.l + obs.obs_width / 2.0
 
             # 绘制障碍物多边形
             p_sl = plt.Polygon(
@@ -197,7 +197,6 @@ class PlotData(Node):
 def main(args=None):
     rclpy.init(args=args)
     plot_node = PlotData()
-    # plt.show(block=False)  # 显式显示窗口（非阻塞）
 
     try:
         rclpy.spin(plot_node)

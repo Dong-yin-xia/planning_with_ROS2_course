@@ -15,18 +15,72 @@ Copyright © 2024 C哥智驾说 All rights reserved.
 */
 
 #include "config_reader.h"
+#include <rclcpp/logger.hpp>
+#include <rclcpp/logging.hpp>
+#include <yaml-cpp/node/parse.h>
 
 namespace Planning
 {
     ConfigReader::ConfigReader() // 配置文件读取器
     {
-        // 获取workspace/install/planning/share/planning/目录路径
+        // 获取workspace/install/planning/share/planning/目录路径, 然后获取senario_config.yaml路径
         std::string planning_share_directory = ament_index_cpp::get_package_share_directory("planning");
+        scenario_config = YAML::LoadFile(planning_share_directory + "/config/senario_config.yaml");
 
         // 然后获取配置文件
+        // 静态配置文件
         // planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_static_obs_config.yaml");
-        planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_dynamic_obs_config.yaml");
+        // 动态配置文件
+        // planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_dynamic_obs_config.yaml");
+
+        // 确定场景类型
+        read_scenario_config(); 
+        switch (scenario_.type_) // 根据场景类型，选择配置文件
+        {
+        case static_cast<int>(ScenarioType::LANE_FOLLOW):
+            planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_static_obs_config.yaml");
+            break;
+
+        case static_cast<int>(ScenarioType::STATIC_OBS):
+            planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_static_obs_config.yaml");
+            break;
+
+        case static_cast<int>(ScenarioType::ONLANE_OBS):
+            planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_onlane_obs_config.yaml");
+            break;
+
+        case static_cast<int>(ScenarioType::DYNAMIC_OBS):
+            planning_config = YAML::LoadFile(planning_share_directory + "/config/planning_dynamic_obs_config.yaml");
+            break;
+
+        default:
+            RCLCPP_ERROR(rclcpp::get_logger("config"), "场景类型错误");
+            break;
+        }
+
+
     }
+
+    /************scenario*************/
+    void ConfigReader::read_scenario_config()
+    {
+        try 
+        {
+            scenario_.type_ = scenario_config["scenario"]["type"].as<int>();
+            scenario_.obs_num_ = scenario_config["scenario"]["obs_num"].as<int>();
+        } 
+        catch (const YAML::Exception& e) 
+        {
+            RCLCPP_ERROR(rclcpp::get_logger("config"), "加载场景配置文件失败：%s", e.what());
+        }
+        
+    }
+
+
+
+
+
+
 
     /************vehicle*************/
     void ConfigReader::read_vehicle_config(VehicleStruct &vehicle, const std::string &name)

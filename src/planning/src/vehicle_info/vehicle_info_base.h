@@ -39,6 +39,7 @@ namespace Planning
 
         }
 
+        // 每调用一次就向前推进一帧时间（正向累加）
         inline void update_t0() { t0_ -= 1.0; }
         inline void update_t_in_out(const double &t, const double &t_in, const double &t_out)
         {

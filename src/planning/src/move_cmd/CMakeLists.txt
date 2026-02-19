@@ -37,7 +37,7 @@ foreach(target ${MOVE_TARGETS})
 endforeach()
 
 # 实际位置赋值开关
-option(USE_ACTUAL_POS_MACRO "是否使用实际位置赋值" OFF)
+option(USE_ACTUAL_POS_MACRO "Enable USE_ACTUAL_POS" OFF)
 if(USE_ACTUAL_POS_MACRO)
   target_compile_definitions(car_move_cmd PUBLIC USE_ACTUAL_POS)
 endif()

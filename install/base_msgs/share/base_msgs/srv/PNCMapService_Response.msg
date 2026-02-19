@@ -1,1 +1,2 @@
-/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_cmake/srv/PNCMapService_Response.msg
+
+PNCMap pnc_map  # 响应: 地图

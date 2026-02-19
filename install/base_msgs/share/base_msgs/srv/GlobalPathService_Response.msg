@@ -1,1 +1,2 @@
-/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_cmake/srv/GlobalPathService_Response.msg
+
+nav_msgs/Path global_path   # 响应: 全局路径

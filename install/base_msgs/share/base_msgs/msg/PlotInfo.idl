@@ -1,1 +1,27 @@
-/home/x/xiugai/planning_with_ROS2_course/build/base_msgs/rosidl_adapter/base_msgs/msg/PlotInfo.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from base_msgs/msg/PlotInfo.msg
+// generated code does not contain a copyright notice
+
+#include "base_msgs/msg/LocalTrajectory.idl"
+#include "base_msgs/msg/ObsInfo.idl"
+#include "std_msgs/msg/Header.idl"
+
+module base_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "绘制信息")
+    struct PlotInfo {
+      @verbatim (language="comment", text=
+        "消息头, 用于坐标系和时间同步")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "轨迹信息")
+      base_msgs::msg::LocalTrajectory trajectory_info;
+
+      @verbatim (language="comment", text=
+        "障碍物信息")
+      sequence<base_msgs::msg::ObsInfo> obs_info;
+    };
+  };
+};
